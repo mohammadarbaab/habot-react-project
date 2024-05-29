@@ -1,69 +1,61 @@
 .yt-dash-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1150px;
+  width: 100%;
   margin-left: 72px;
   margin-top: 100px;
-  padding: 20px; /* Add some padding for better spacing */
+  padding: 20px;
   background: #072f57;
-  min-height: 623px; /* Make the container take full viewport height */
+  min-height: 623px;
 }
 
 .yt-dash-left {
-  flex: 1;
-  padding-right: 20px;
-  padding-left: 20px; /* Space between the video and the text */
-}
-
-.yt-dash-left iframe {
+  position: relative;
   width: 100%;
-  height: 100%;
+  max-width: 461px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.yt-dash-right {
-  width: 461px;
-  height: 156px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center align text vertically */
-  padding-left: 20px;
-  margin-bottom: 100px;
-  /* Space between the text and the video */
-}
-.yt-dash-right p {
+.yt-dash-left p {
   font-family: Poppins;
-  width: 421px;
-  font-size: 17.16px;
+  font-size: 18.75px;
   font-weight: 500;
-  line-height: 15px;
+  line-height: 1.5;
   text-align: left;
-  margin-top: 20px;
-  color: white; /* Add color for text */
-  margin-left: 5px;
+  margin-top: 10px;
 }
-.paragraph {
-  display: flex;
-  align-items: center;
+
+.yt-dash-left img {
+  width: 9.14px;
+  height: 9.11px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
-.paragraph img{
-    size: 10px;
-    width: 13px;
-    margin-left: 20px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
+
+.yt-dash-left.buyer,
+.yt-dash-left.supplier {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+  border-radius: 1px 0px 0px 0px;
+  color: #EB7150;
 }
 
 .yt-dash-text {
   display: flex;
-  justify-content: space-between;
-  width: 404px;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-weight: 700;
   font-size: 26px;
-  line-height: 20px;
+  line-height: 1.5;
+  margin-top: 20px;
 }
 
 .buyer,
@@ -72,17 +64,16 @@
   display: inline-block;
   padding: 10px 20px;
   margin: 10px;
-  margin-left: 30px;
   cursor: pointer;
-  color: white; /* Initial text color */
-  transition: color 0.3s ease; /* Text color transition */
+  color: white;
+  transition: color 0.3s ease;
 }
 
 .buyer::after,
 .supplier::after {
   content: '';
   display: block;
-  width: 0; /* Initial width set to 0 */
+  width: 0;
   height: 2px;
   background-color: #EB7150;
   transition: width 0.3s ease;
@@ -94,11 +85,73 @@
 
 .buyer:hover,
 .supplier:hover {
-  color: #EB7150; /* Text color change on hover */
+  color: #EB7150;
 }
 
 .buyer:hover::after,
 .supplier:hover::after {
-  width: 140px; /* Adjust the width as per your requirement */
+  width: 140px;
   height: 2px;
+}
+
+.yt-dash-paragraphs {
+  margin-top: 20px;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+
+.paragraph img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+.yt-dash-container {
+    flex-direction: row;
+    height: auto;
+  }
+
+.yt-dash-left,
+.yt-dash-right {
+    width: 50%;
+    max-width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+.yt-dash-left img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+  }
+
+.yt-dash-left.buyer,
+.yt-dash-left.supplier {
+    width: auto;
+    height: auto;
+    margin: 10px 0;
+  }
+
+.yt-dash-text {
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+.yt-dash-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.yt-dash-right.yt-dash-text {
+    margin-top: 0;
+  }
+
+.yt-dash-right.yt-dash-paragraphs {
+    margin-top: 20px;
+  }
 }

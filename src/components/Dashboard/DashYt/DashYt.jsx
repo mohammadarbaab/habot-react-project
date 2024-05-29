@@ -11,33 +11,24 @@ function DashYt({ videoId }) {
       </div>
       <div className="yt-dash-right">
         <div className="yt-dash-text">
-          <text class="buyer">Buyer</text>
-          <text class="supplier">Supplier</text>
+          <span className="buyer">Buyer</span>
+          <span className="supplier">Supplier</span>
         </div>
 
         <div className="yt-dash-paragraphs">
-        <div className="yt-dash-paragraphs">
-      <div className="paragraph">
-      <img src={checkicon} alt="Check icon"  />
-        <p>
-          Post your requirements.
-        </p>
-      </div>
-      <div className="paragraph">
-      <img src={checkicon} alt="Check icon"  />
-        <p>
-          
-          Sit back for multiple suppliers to contact you.
-        </p>
-      </div>
-      <div className="paragraph">
-      <img src={checkicon} alt="Check icon" width="20px" />
-        <p>
-          Choose among the suppliers based on
-        </p>
-      </div>
-    </div>
-    </div>
+          <div className="paragraph">
+            <img src={checkicon} alt="Check icon" />
+            <p>Post your requirements.</p>
+          </div>
+          <div className="paragraph">
+            <img src={checkicon} alt="Check icon" />
+            <p>Sit back for multiple suppliers to contact you.</p>
+          </div>
+          <div className="paragraph">
+            <img src={checkicon} alt="Check icon" width="20px" />
+            <p>Choose among the suppliers based on</p>
+          </div>
+        </div>
       </div>
     </div>
   );

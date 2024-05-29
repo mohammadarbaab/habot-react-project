@@ -1,3 +1,2053 @@
+.yt-dash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1150px;
+  margin-left: 72px;
+  margin-top: 100px;
+  padding: 20px; /* Add some padding for better spacing */
+  background: #072f57;
+  min-height: 623px; /* Make the container take full viewport height */
+}
+
+.yt-dash-left {
+  position: relative;
+  width: 100%;
+  max-width: 461px; /* Adjust as needed */
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.yt-dash-left p {
+  font-family: Poppins;
+  font-size: 18.75px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 10px; /* Add margin top for paragraph */
+}
+
+.yt-dash-left img {
+  width: 9.14px;
+  height: 9.11px;
+  margin-right: 10px;
+  margin-top: 10px; /* Add margin top for image */
+}
+
+.yt-dash-left .buyer,
+.yt-dash-left .supplier {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px; /* Add margin between Buyer and Supplier */
+  margin-top: 10px; /* Add margin top for Buyer and Supplier */
+  border-radius: 1px 0px 0px 0px;
+  color: #EB7150;
+}
+
+
+
+.yt-dash-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.buyer,
+.supplier {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.buyer::after,
+.supplier::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #EB7150;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buyer:hover,
+.supplier:hover {
+  color: #EB7150;
+}
+
+.buyer:hover::after,
+.supplier:hover::after {
+  width: 140px;
+  height: 2px;
+}
+
+.yt-dash-paragraphs {
+  margin-top: 20px;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+
+.paragraph img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .yt-dash-container {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .yt-dash-left,
+  .yt-dash-right {
+    width: 50%;
+    max-width: 50%; /* Adjust as needed */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .yt-dash-left img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+  }
+
+  .yt-dash-left .buyer,
+  .yt-dash-left .supplier {
+    width: auto;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .yt-dash-text {
+    font-size: 30px;
+    margin-top: 0;
+  }
+}
+
+ 
+.yt-dash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1150px;
+  margin-left: 72px;
+  margin-top: 100px;
+  padding: 20px; /* Add some padding for better spacing */
+  background: #072f57;
+  min-height: 623px; /* Make the container take full viewport height */
+}
+
+.yt-dash-left {
+  position: relative;
+  width: 100%;
+  max-width: 461px; /* Adjust as needed */
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.yt-dash-left p {
+  font-family: Poppins;
+  font-size: 18.75px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 10px; /* Add margin top for paragraph */
+}
+
+.yt-dash-left img {
+  width: 9.14px;
+  height: 9.11px;
+  margin-right: 10px;
+  margin-top: 10px; /* Add margin top for image */
+}
+
+.yt-dash-left .buyer,
+.yt-dash-left .supplier {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px; /* Add margin between Buyer and Supplier */
+  margin-top: 10px; /* Add margin top for Buyer and Supplier */
+  border-radius: 1px 0px 0px 0px;
+  color: #EB7150;
+}
+
+
+
+.yt-dash-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.buyer,
+.supplier {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.buyer::after,
+.supplier::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #EB7150;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buyer:hover,
+.supplier:hover {
+  color: #EB7150;
+}
+
+.buyer:hover::after,
+.supplier:hover::after {
+  width: 140px;
+  height: 2px;
+}
+
+.yt-dash-paragraphs {
+  margin-top: 20px;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+
+.paragraph img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .yt-dash-container {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .yt-dash-left,
+  .yt-dash-right {
+    width: 50%;
+    max-width: 50%; /* Adjust as needed */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .yt-dash-left img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+  }
+
+  .yt-dash-left .buyer,
+  .yt-dash-left .supplier {
+    width: auto;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .yt-dash-text {
+    font-size: 30px;
+    margin-top: 0;
+  }
+}
+
+ 
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #072f57;
+ 
+.yt-dash-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #072f57;
+}
+
+.yt-dash-left {
+  position: relative;
+  width: 100%;
+  max-width: 461px; /* Adjust as needed */
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.yt-dash-left p {
+  font-family: Poppins;
+  font-size: 18.75px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.yt-dash-left img {
+  width: 9.14px;
+  height: 9.11px;
+  margin-right: 10px;
+}
+
+.yt-dash-left .buyer,
+.yt-dash-left .supplier {
+  position: relative;
+  display: inline-block;
+  width: 202px;
+  height: 47px;
+  margin: 10px;
+  border-radius: 1px 0px 0px 0px;
+  color: #EB7150;
+}
+
+
+
+.yt-dash-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.buyer,
+.supplier {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.buyer::after,
+.supplier::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #EB7150;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buyer:hover,
+.supplier:hover {
+  color: #EB7150;
+}
+
+.buyer:hover::after,
+.supplier:hover::after {
+  width: 140px;
+  height: 2px;
+}
+
+.yt-dash-paragraphs {
+  margin-top: 20px;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+
+.paragraph img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .yt-dash-container {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .yt-dash-left,
+  .yt-dash-right {
+    width: 50%;
+    max-width: 50%; /* Adjust as needed */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .yt-dash-left img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+  }
+
+  .yt-dash-left .buyer,
+  .yt-dash-left .supplier {
+    width: auto;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .yt-dash-text {
+    font-size: 30px;
+    margin-top: 0;
+  }
+}
+
+ 
+.yt-dash-left {
+  position: relative;
+  width: 100%;
+  max-width: 461px; /* Adjust as needed */
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.yt-dash-left p {
+  font-family: Poppins;
+  font-size: 18.75px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.yt-dash-left img {
+  width: 9.14px;
+  height: 9.11px;
+  margin-right: 10px;
+}
+
+.yt-dash-left .buyer,
+.yt-dash-left .supplier {
+  position: relative;
+  display: inline-block;
+  width: 202px;
+  height: 47px;
+  margin: 10px;
+  border-radius: 1px 0px 0px 0px;
+  color: #EB7150;
+}
+
+ 
+.yt-dash-right {
+  width: 100%;
+  max-width: 461px; /* Adjust as needed */
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 120px; /* Add margin-top */
+}
+ 
+
+  gap: 10px;
+ 
+yt-dash-right {
+  width: 100%;
+  max-width: 461px; /* Adjust as needed */
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 50px; /* Add margin-top */
+}
+ 
+
+.yt-dash-right {
+  
+}
+ 
+
+  width: 100%;
+  max-width: 461px; /* Adjust as needed */
+  padding: 20px;
+  box-sizing: border-box;
+ 
+
+@media screen and (min-width: 768px) {
+  .yt-dash-container {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .yt-dash-left,
+  .yt-dash-right {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .yt-dash-left iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+ 
+.yt-dash-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 623px;
+  background: #072f57;
+}
+
+.yt-dash-left {
+  width: 100%;
+  padding: 20px;
+}
+
+.yt-dash-left iframe {
+  width: 100%;
+  height: auto;
+}
+
+.yt-dash-right {
+  width: 100%;
+  padding: 20px;
+}
+
+.yt-dash-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70%;
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  padding-left: 23px;
+  padding-right:10px;
+  justify-content: space-between;
+}
+
+.buyer,
+.supplier {
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.buyer::after,
+.supplier::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #EB7150;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buyer:hover,
+.supplier:hover {
+  color: #EB7150;
+}
+
+.buyer:hover::after,
+.supplier:hover::after {
+  width: 140px;
+  height: 2px;
+}
+
+.yt-dash-paragraphs {
+  margin-top: 20px;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+
+.paragraph img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+ 
+.yt-dash-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 623px;
+  background: #072f57;
+}
+
+.yt-dash-left {
+  width: 100%;
+  padding: 20px;
+}
+
+.yt-dash-left iframe {
+  width: 100%;
+  height: auto;
+}
+
+.yt-dash-right {
+  width: 100%;
+  padding: 20px;
+}
+
+.yt-dash-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70%;
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  padding-left: 23px;
+  padding-right:10px;
+  justify-content: space-between;
+}
+
+.buyer,
+.supplier {
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.buyer::after,
+.supplier::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #EB7150;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buyer:hover,
+.supplier:hover {
+  color: #EB7150;
+}
+
+.buyer:hover::after,
+.supplier:hover::after {
+  width: 140px;
+  height: 2px;
+}
+
+.yt-dash-paragraphs {
+  margin-top: 20px;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+
+.paragraph img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+ 
+
+  margin-top: 20px;
+  
+ 
+
+  /* padding: 10px 20px; */
+ 
+.yt-dash-container {
+  display: flex;
+  flex-direction: column; /* Stack the content vertically on small screens */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #072f57;
+  height: 623px; /* Set height to 623px */
+}
+
+.yt-dash-left {
+  width: 100%; /* Take full width */
+  max-width: 100%; /* Ensure maximum width */
+  padding: 20px;
+}
+
+.yt-dash-left iframe {
+  width: 100%; /* Take full width of its container */
+  height: auto; /* Automatically adjust height */
+}
+
+.yt-dash-right {
+  width: 100%; /* Take full width */
+  max-width: 100%; /* Ensure maximum width */
+  padding: 20px;
+}
+
+.yt-dash-right p {
+  font-family: Poppins;
+  font-size: 17.16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  color: white;
+  margin-top: 20px;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+
+.paragraph img {
+  width: 20px; /* Adjust size of the image */
+  margin-right: 10px; /* Add some spacing between image and text */
+}
+
+.yt-dash-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Take full width */
+  max-width: 100%; /* Ensure maximum width */
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  margin-top: 20px; /* Add some spacing from the paragraphs */
+}
+
+.buyer,
+.supplier {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+  color: white; /* Initial text color */
+  transition: color 0.3s ease; /* Text color transition */
+}
+
+.buyer::after,
+.supplier::after {
+  content: '';
+  display: block;
+  width: 0; /* Initial width set to 0 */
+  height: 2px;
+  background-color: #EB7150;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buyer:hover,
+.supplier:hover {
+  color: #EB7150; /* Text color change on hover */
+}
+
+.buyer:hover::after,
+.supplier:hover::after {
+  width: 140px; /* Adjust the width as per your requirement */
+  height: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .yt-dash-container {
+    flex-direction: row; /* Arrange content horizontally on larger screens */
+  }
+
+  .yt-dash-left,
+  .yt-dash-right {
+    width: 50%; /* Take half width on larger screens */
+    max-width: 50%; /* Ensure maximum width */
+    padding: 20px;
+  }
+
+  .yt-dash-left iframe {
+    width: 100%; /* Take full width of its container */
+    height: 100%; /* Take full height of its container */
+  }
+}
+
+ 
+import React from "react";
+import "./DashYt.css";
+import YouTubeEmbed from "../YoutubeEmbed/YtEmbed";
+import checkicon from '../../../assets/check.png'
+
+function DashYt({ videoId }) {
+  return (
+    <div className="yt-dash-container">
+      <div className="yt-dash-left">
+        <YouTubeEmbed videoId={videoId} />
+      </div>
+      <div className="yt-dash-right">
+        <div className="yt-dash-text">
+          <text class="buyer">Buyer</text>
+          <text class="supplier">Supplier</text>
+        </div>
+
+        <div className="yt-dash-paragraphs">
+        <div className="yt-dash-paragraphs">
+      <div className="paragraph">
+      <img src={checkicon} alt="Check icon"  />
+        <p>
+          Post your requirements.
+        </p>
+      </div>
+      <div className="paragraph">
+      <img src={checkicon} alt="Check icon"  />
+        <p>
+          
+          Sit back for multiple suppliers to contact you.
+        </p>
+      </div>
+      <div className="paragraph">
+      <img src={checkicon} alt="Check icon" width="20px" />
+        <p>
+          Choose among the suppliers based on
+        </p>
+      </div>
+    </div>
+    </div>
+      </div>
+    </div>
+  );
+}
+
+export default DashYt;
+
+ 
+.yt-dash-container {
+  display: flex;
+  flex-direction: column; /* Stack the content vertically on small screens */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
+  background: #072f57;
+}
+
+.yt-dash-left {
+  width: 100%; /* Take full width */
+  max-width: 100%; /* Ensure maximum width */
+  padding: 20px;
+}
+
+.yt-dash-left iframe {
+  width: 100%; /* Take full width of its container */
+  height: auto; /* Automatically adjust height */
+}
+
+.yt-dash-right {
+  width: 100%; /* Take full width */
+  max-width: 100%; /* Ensure maximum width */
+  padding: 20px;
+}
+
+.yt-dash-right p {
+  font-family: Poppins;
+  font-size: 17.16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  color: white;
+  margin-top: 20px;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+
+.paragraph img {
+  width: 20px; /* Adjust size of the image */
+  margin-right: 10px; /* Add some spacing between image and text */
+}
+
+.yt-dash-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Take full width */
+  max-width: 100%; /* Ensure maximum width */
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  margin-top: 20px; /* Add some spacing from the paragraphs */
+}
+
+.buyer,
+.supplier {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+  color: white; /* Initial text color */
+  transition: color 0.3s ease; /* Text color transition */
+}
+
+.buyer::after,
+.supplier::after {
+  content: '';
+  display: block;
+  width: 0; /* Initial width set to 0 */
+  height: 2px;
+  background-color: #EB7150;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buyer:hover,
+.supplier:hover {
+  color: #EB7150; /* Text color change on hover */
+}
+
+.buyer:hover::after,
+.supplier:hover::after {
+  width: 140px; /* Adjust the width as per your requirement */
+  height: 2px
+}
+
+@media screen and (min-width: 768px) {
+  .yt-dash-container {
+    flex-direction: row; /* Arrange content horizontally on larger screens */
+  }
+
+  .yt-dash-left,
+  .yt-dash-right {
+    width: 50%; /* Take half width on larger screens */
+    max-width: 50%; /* Ensure maximum width */
+    padding: 20px;
+  }
+
+  .yt-dash-left iframe {
+    width: 100%; /* Take full width of its container */
+    height: 100%; /* Take full height of its container */
+  }
+}
+
+ 
+@media screen and (min-width: 768px) {
+  .yt-dash-container {
+    flex-direction: row; /* Arrange content horizontally on larger screens */
+  }
+
+  .yt-dash-left,
+  .yt-dash-right {
+    width: 50%; /* Take half width on larger screens */
+    max-width: 50%; /* Ensure maximum width */
+    padding: 20px;
+  }
+
+  .yt-dash-left iframe {
+    width: 100%; /* Take full width of its container */
+    height: 100%; /* Take full height of its container */
+  }
+}
+ 
+.yt-dash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1150px;
+  margin-left: 72px;
+  margin-top: 100px;
+  padding: 20px; /* Add some padding for better spacing */
+  background: #072f57;
+  min-height: 623px; /* Make the container take full viewport height */
+}
+
+.yt-dash-left {
+  flex: 1;
+  padding-right: 20px;
+  padding-left: 20px; /* Space between the video and the text */
+}
+
+.yt-dash-left iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.yt-dash-right {
+  width: 461px;
+  height: 156px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center align text vertically */
+  padding-left: 20px;
+  margin-bottom: 100px;
+  /* Space between the text and the video */
+}
+.yt-dash-right p {
+  font-family: Poppins;
+  width: 421px;
+  font-size: 17.16px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: left;
+  margin-top: 20px;
+  color: white; /* Add color for text */
+  margin-left: 5px;
+}
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+.paragraph img{
+    size: 10px;
+    width: 13px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.yt-dash-text {
+  display: flex;
+  justify-content: space-between;
+  width: 404px;
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 20px;
+}
+ 
+.yt-dash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1150px;
+  margin-left: 72px;
+  margin-top: 100px;
+  padding: 20px; /* Add some padding for better spacing */
+  background: #072f57;
+  min-height: 623px; /* Make the container take full viewport height */
+}
+
+.yt-dash-left {
+  flex: 1;
+  padding-right: 20px;
+  padding-left: 20px; /* Space between the video and the text */
+}
+
+.yt-dash-left iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.yt-dash-right {
+  width: 461px;
+  height: 156px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center align text vertically */
+  padding-left: 20px;
+  margin-bottom: 100px;
+  /* Space between the text and the video */
+}
+.yt-dash-right p {
+  font-family: Poppins;
+  width: 421px;
+  font-size: 17.16px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: left;
+  margin-top: 20px;
+  color: white; /* Add color for text */
+  margin-left: 5px;
+}
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+.paragraph img{
+    size: 10px;
+    width: 13px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.yt-dash-text {
+  display: flex;
+  justify-content: space-between;
+  width: 404px;
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 20px;
+}
+
+.buyer,
+.supplier {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+  color: white; /* Initial text color */
+  transition: color 0.3s ease; /* Text color transition */
+}
+
+.buyer::after,
+.supplier::after {
+  content: '';
+  display: block;
+  width: 0; /* Initial width set to 0 */
+  height: 2px;
+  background-color: #EB7150;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buyer:hover,
+.supplier:hover {
+  color: #EB7150; /* Text color change on hover */
+}
+
+.buyer:hover::after,
+.supplier:hover::after {
+  width: 140px; /* Adjust the width as per your requirement */
+  height: 2px
+}
+
+ 
+.yt-dash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1150px;
+  margin-left: 72px;
+  margin-top: 100px;
+  padding: 20px; /* Add some padding for better spacing */
+  background: #072f57;
+  min-height: 623px; /* Make the container take full viewport height */
+}
+
+.yt-dash-left {
+  flex: 1;
+  padding-right: 20px;
+  padding-left: 20px; /* Space between the video and the text */
+}
+
+.yt-dash-left iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.yt-dash-right {
+  width: 461px;
+  height: 156px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center align text vertically */
+  padding-left: 20px;
+  margin-bottom: 100px;
+  /* Space between the text and the video */
+}
+.yt-dash-right p {
+  font-family: Poppins;
+  width: 421px;
+  font-size: 17.16px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: left;
+  margin-top: 20px;
+  color: white; /* Add color for text */
+  margin-left: 5px;
+}
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+.paragraph img{
+    size: 10px;
+    width: 13px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.yt-dash-text {
+  display: flex;
+  justify-content: space-between;
+  width: 404px;
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 20px;
+}
+
+.buyer,
+.supplier {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+  color: white; /* Initial text color */
+  transition: color 0.3s ease; /* Text color transition */
+}
+
+.buyer::after,
+.supplier::after {
+  content: '';
+  display: block;
+  width: 0; /* Initial width set to 0 */
+  height: 2px;
+  background-color: #EB7150;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buyer:hover,
+.supplier:hover {
+  color: #EB7150; /* Text color change on hover */
+}
+
+.buyer:hover::after,
+.supplier:hover::after {
+  width: 140px; /* Adjust the width as per your requirement */
+  height: 2px
+}
+
+ 
+import React from "react";
+import "./DashYt.css";
+import YouTubeEmbed from "../YoutubeEmbed/YtEmbed";
+import checkicon from '../../../assets/check.png'
+
+function DashYt({ videoId }) {
+  return (
+    <div className="yt-dash-container">
+      <div className="yt-dash-left">
+        <YouTubeEmbed videoId={videoId} />
+      </div>
+      <div className="yt-dash-right">
+        <div className="yt-dash-text">
+          <text class="buyer">Buyer</text>
+          <text class="supplier">Supplier</text>
+        </div>
+
+        <div className="yt-dash-paragraphs">
+        <div className="yt-dash-paragraphs">
+      <div className="paragraph">
+      <img src={checkicon} alt="Check icon"  />
+        <p>
+          Post your requirements.
+        </p>
+      </div>
+      <div className="paragraph">
+      <img src={checkicon} alt="Check icon"  />
+        <p>
+          
+          Sit back for multiple suppliers to contact you.
+        </p>
+      </div>
+      <div className="paragraph">
+      <img src={checkicon} alt="Check icon" width="20px" />
+        <p>
+          Choose among the suppliers based on
+        </p>
+      </div>
+    </div>
+    </div>
+      </div>
+    </div>
+  );
+}
+
+export default DashYt;
+
+ 
+.yt-dash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1150px;
+  margin-left: 72px;
+  margin-top: 100px;
+  padding: 20px; /* Add some padding for better spacing */
+  background: #072f57;
+  min-height: 623px; /* Make the container take full viewport height */
+}
+
+.yt-dash-left {
+  flex: 1;
+  padding-right: 20px;
+  padding-left: 20px; /* Space between the video and the text */
+}
+
+.yt-dash-left iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.yt-dash-right {
+  width: 461px;
+  height: 156px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center align text vertically */
+  padding-left: 20px;
+  margin-bottom: 100px;
+  /* Space between the text and the video */
+}
+.yt-dash-right p {
+  font-family: Poppins;
+  width: 421px;
+  font-size: 17.16px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: left;
+  margin-top: 20px;
+  color: white; /* Add color for text */
+  margin-left: 5px;
+}
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+.paragraph img{
+    size: 10px;
+    width: 13px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.yt-dash-text {
+  display: flex;
+  justify-content: space-between;
+  width: 404px;
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 20px;
+}
+
+.buyer,
+.supplier {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+  color: white; /* Initial text color */
+  transition: color 0.3s ease; /* Text color transition */
+}
+
+.buyer::after,
+.supplier::after {
+  content: '';
+  display: block;
+  width: 0; /* Initial width set to 0 */
+  height: 2px;
+  background-color: #EB7150;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buyer:hover,
+.supplier:hover {
+  color: #EB7150; /* Text color change on hover */
+}
+
+.buyer:hover::after,
+.supplier:hover::after {
+  width: 140px; /* Adjust the width as per your requirement */
+  height: 2px;
+}
+
+ 
+.yt-dash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1150px;
+  margin-left: 72px;
+  margin-top: 100px;
+  padding: 20px; /* Add some padding for better spacing */
+  background: #072f57;
+  min-height: 623px; /* Make the container take full viewport height */
+}
+
+.yt-dash-left {
+  flex: 1;
+  padding-right: 20px;
+  padding-left: 20px; /* Space between the video and the text */
+}
+
+.yt-dash-left iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.yt-dash-right {
+  width: 461px;
+  height: 156px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center align text vertically */
+  padding-left: 20px;
+  margin-bottom: 100px;
+  /* Space between the text and the video */
+}
+.yt-dash-right p {
+  font-family: Poppins;
+  width: 421px;
+  font-size: 17.16px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: left;
+  margin-top: 20px;
+  color: white; /* Add color for text */
+  margin-left: 5px;
+}
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+.paragraph img{
+    size: 10px;
+    width: 13px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.yt-dash-text {
+  display: flex;
+  justify-content: space-between;
+  width: 404px;
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 20px;
+}
+
+.buyer,
+.supplier {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+  color: white; /* Initial text color */
+  transition: color 0.3s ease; /* Text color transition */
+}
+
+.buyer::after,
+.supplier::after {
+  content: '';
+  display: block;
+  width: 0; /* Initial width set to 0 */
+  height: 2px;
+  background-color: #EB7150;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buyer:hover,
+.supplier:hover {
+  color: #EB7150; /* Text color change on hover */
+}
+
+.buyer:hover::after,
+.supplier:hover::after {
+  width: 140px; /* Adjust the width as per your requirement */
+  height: 2px;
+}
+
+ 
+.yt-dash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1150px;
+  margin-left: 72px;
+  margin-top: 100px;
+  padding: 20px; /* Add some padding for better spacing */
+  background: #072f57;
+  min-height: 623px; /* Make the container take full viewport height */
+}
+
+.yt-dash-left {
+  flex: 1;
+  padding-right: 20px;
+  padding-left: 20px; /* Space between the video and the text */
+}
+
+.yt-dash-left iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.yt-dash-right {
+  width: 461px;
+  height: 156px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center align text vertically */
+  padding-left: 20px;
+  margin-bottom: 100px;
+  /* Space between the text and the video */
+}
+.yt-dash-right p {
+  font-family: Poppins;
+  width: 421px;
+  font-size: 17.16px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: left;
+  margin-top: 20px;
+  color: white; /* Add color for text */
+  margin-left: 5px;
+}
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+.paragraph img{
+    size: 10px;
+    width: 13px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.yt-dash-text {
+  display: flex;
+  justify-content: space-between;
+  width: 404px;
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 20px;
+}
+
+.buyer,
+.supplier {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+  color: white; /* Initial text color */
+  transition: color 0.3s ease; /* Text color transition */
+}
+
+.buyer::after,
+.supplier::after {
+  content: '';
+  display: block;
+  width: 0; /* Initial width set to 0 */
+  height: 2px;
+  background-color: #EB7150;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buyer:hover,
+.supplier:hover {
+  color: #EB7150; /* Text color change on hover */
+}
+
+.buyer:hover::after,
+.supplier:hover::after {
+  width: 140px; /* Adjust the width as per your requirement */
+  height: 2px;
+}
+
+ 
+/* Include padding and border in the element's total width and height */
+ 
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.yt-dash-left iframe {
+  width: 100%; /* Take full width of its container */
+  height: auto; /* Automatically adjust height */
+}
+
+.yt-dash-right {
+  width: 100%; /* Take full width on small screens */
+  max-width: 100%; /* Ensure maximum width */
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+.yt-dash-right p {
+  font-family: Poppins;
+  font-size: 17.16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  color: white;
+  margin-top: 20px;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+
+.paragraph img {
+  width: 20px; /* Adjust size of the image */
+  margin-right: 10px; /* Add some spacing between image and text */
+}
+
+.yt-dash-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Take full width on small screens */
+  max-width: 100%; /* Ensure maximum width */
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  margin-top: 20px; /* Add some spacing from the paragraphs */
+}
+
+.buyer,
+.supplier {
+  margin: 0 10px; /* Adjust margin for better spacing */
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.buyer::after,
+.supplier::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #EB7150;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buyer:hover,
+.supplier:hover {
+  color: #EB7150;
+}
+
+.buyer:hover::after,
+.supplier:hover::after {
+  width: 100%;
+}
+
+ 
+.yt-dash-container {
+  display: flex;
+  flex-direction: column; /* Stack the content vertically on small screens */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background: #072f57;
+}
+
+.yt-dash-left {
+  width: 100%; /* Take full width on small screens */
+  max-width: 100%; /* Ensure maximum width */
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+.yt-dash-left iframe {
+  width: 100%; /* Ensure the video fills the container */
+  height: 100%;
+}
+
+.yt-dash-right {
+  width: 100%; /* Take full width on small screens */
+  max-width: 100%; /* Ensure maximum width */
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+.yt-dash-text {
+  width: 100%; /* Take full width on small screens */
+  max-width: 100%; /* Ensure maximum width */
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 20px;
+}
+
+.buyer,
+.supplier {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.buyer::after,
+.supplier::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #EB7150;
+  transition: width 0.3s ease;
+}
+
+.buyer:hover,
+.supplier:hover {
+  color: #EB7150;
+}
+
+.buyer:hover::after,
+.supplier:hover::after {
+  width: 140px;
+  height: 2px;
+}
+
+.yt-dash-paragraphs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.yt-dash-paragraphs .paragraph {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.yt-dash-paragraphs .paragraph img {
+  width: 13px;
+  margin-right: 10px;
+}
+
+.yt-dash-paragraphs p {
+  font-family: Poppins;
+  font-size: 17.16px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 0;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .yt-dash-container {
+    flex-direction: row; /* Display content in a row on larger screens */
+    min-height: 500px; /* Adjust minimum height as needed */
+  }
+}
+
+ 
+.yt-dash-container {
+  display: flex;
+  flex-direction: column; /* Stack the content vertically on small screens */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background: #072f57;
+}
+
+.yt-dash-left {
+  width: 100%; /* Take full width on small screens */
+  max-width: 100%; /* Ensure maximum width */
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+.yt-dash-left iframe {
+  width: 100%; /* Ensure the video fills the container */
+  height: 100%;
+}
+
+.yt-dash-right {
+  width: 100%; /* Take full width on small screens */
+  max-width: 100%; /* Ensure maximum width */
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+.yt-dash-text {
+  width: 100%; /* Take full width on small screens */
+  max-width: 100%; /* Ensure maximum width */
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 20px;
+}
+
+.buyer,
+.supplier {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.buyer::after,
+.supplier::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #EB7150;
+  transition: width 0.3s ease;
+}
+
+.buyer:hover,
+.supplier:hover {
+  color: #EB7150;
+}
+
+.buyer:hover::after,
+.supplier:hover::after {
+  width: 140px;
+  height: 2px;
+}
+
+.yt-dash-paragraphs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.yt-dash-paragraphs .paragraph {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.yt-dash-paragraphs .paragraph img {
+  width: 13px;
+  margin-right: 10px;
+}
+
+.yt-dash-paragraphs p {
+  font-family: Poppins;
+  font-size: 17.16px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 0;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .yt-dash-container {
+    flex-direction: row; /* Display content in a row on larger screens */
+    min-height: 500px; /* Adjust minimum height as needed */
+  }
+}
+
+ 
+.yt-dash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1150px;
+  margin-left: 72px;
+  margin-top: 100px;
+  padding: 20px; /* Add some padding for better spacing */
+  background: #072f57;
+  min-height: 623px; /* Make the container take full viewport height */
+}
+
+.yt-dash-left {
+  flex: 1;
+  padding-right: 20px;
+  padding-left: 20px; /* Space between the video and the text */
+}
+
+.yt-dash-left iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.yt-dash-right {
+  width: 461px;
+  height: 156px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center align text vertically */
+  padding-left: 20px;
+  margin-bottom: 100px;
+  /* Space between the text and the video */
+}
+.yt-dash-right p {
+  font-family: Poppins;
+  width: 421px;
+  font-size: 17.16px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: left;
+  margin-top: 20px;
+  color: white; /* Add color for text */
+  margin-left: 5px;
+}
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+.paragraph img{
+    size: 10px;
+    width: 13px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.yt-dash-text {
+  display: flex;
+  justify-content: space-between;
+  width: 404px;
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 20px;
+}
+
+.buyer,
+.supplier {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+  color: white; /* Initial text color */
+  transition: color 0.3s ease; /* Text color transition */
+}
+
+.buyer::after,
+.supplier::after {
+  content: '';
+  display: block;
+  width: 0; /* Initial width set to 0 */
+  height: 2px;
+  background-color: #EB7150;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buyer:hover,
+.supplier:hover {
+  color: #EB7150; /* Text color change on hover */
+}
+
+.buyer:hover::after,
+.supplier:hover::after {
+  width: 140px; /* Adjust the width as per your requirement */
+  height: 2px;
+}
+
+ 
 .buttons-container {
   display: flex;
   flex-wrap: wrap;
