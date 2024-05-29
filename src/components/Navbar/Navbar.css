@@ -1,7 +1,8 @@
-nav {
+/* Base styles */
+.navbar-container {
   width: 100%;
   background: #fff;
-  padding: 4px 0;
+  padding: 1rem 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -11,21 +12,124 @@ nav {
   z-index: 10;
   height: 10vh;
 }
+
 .logo {
   width: 181px;
-  padding-left: 50px;
+  padding-left: 1rem;
 }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
 nav ul li {
-  display: inline-block;
   list-style: none;
-  font-size: 16px;
-  padding-left: 15px;
+  font-size: 1rem;
+  padding: 0 1rem;
 }
-.find-icon {
-  position: "relative";
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 120px;
+    padding-left: 0.5rem;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%; /* Off-screen initially */
+    height: 100vh;
+    width: 250px;
+    background: #fff;
+    padding: 5rem 1rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease; /* Smooth transition */
+  }
+
+  .nav-links-container.active {
+    left: 0; /* Slide in */
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    padding: 1rem 0;
+  }
+
+  .button {
+    width: 193px;
+    text-align: center;
+  }
+
+  .button .content {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+  }
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
   display: inline-block;
 }
-.find-icon li {
-  cursor: "pointer";
-  list-style: none;
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
+
+.dropdown-icon {
+  margin-left: 4px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+}
+
+.sidebar-logo {
+  width: 100px; /* Adjust size as needed */
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Center   the logo */
+}
+
+/* Media query for hiding logo in top navbar when screen size increases */
+@media screen and (min-width: 769px) {
+  .navbar-container .sidebar-logo {
+    display: none;
+  }
+}
+
+

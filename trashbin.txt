@@ -1,3 +1,3165 @@
+/* Base styles for Hero section */
+.hero {
+  width: 100%;
+  min-height: 523px;
+  background: linear-gradient(
+      356.01deg,
+      rgba(7, 47, 87, 0.75) 50.8%,
+      rgba(7, 47, 87, 0) 94.58%
+    ),
+    linear-gradient(0deg, rgba(7, 47, 87, 0.45), rgba(7, 47, 87, 0.45)),
+    url("../../assets/hero-habot.PNG");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-text {
+  width: 100%;
+  max-width: 935px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 3rem; /* Adjusted for responsiveness */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.hero-text h3 {
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem; /* Adjusted for responsiveness */
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.hero-inputs {
+  display: flex;
+  flex-direction: row; /* Display inputs in a row on larger screens */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 935px;
+  margin-top: 20px;
+}
+
+.hero-inputs input {
+  width: calc(50% - 10px); /* Adjust the width to fit two inputs in one row */
+  height: 56px;
+  padding: 0 40px; /* Adjust padding for the icon */
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  color: black;
+  margin: 5px;
+  background-size: 24px; /* Adjust size of the icon */
+  background-position: 10px center; /* Adjust position of the icon */
+  background-repeat: no-repeat;
+}
+
+.hero-inputs button {
+  width: auto;
+  height: 56px;
+  padding: 0 20px;
+  border-radius: 5px;
+  border: none;
+  background: #00732f;
+  color: #fff;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.hero-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-footer b {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.hero-footer a {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-left: 6px;
+  text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem; /* Smaller font size on small screens */
+  }
+
+  .hero-text h3 {
+    font-size: 1.25rem; /* Smaller font size on small screens */
+  }
+
+  .hero-inputs {
+    flex-direction: column; /* Display inputs in a column on small screens */
+    width: 100%;
+  }
+
+  .hero-inputs input,
+  .hero-inputs button {
+    width: 90%;
+    margin: 5px 0; /* Adjust spacing between inputs */
+  }
+
+  .hero-footer {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+ 
+
+  .icon-input:first-of-type {
+    background-image: url("D:\07.Git\30.Habot project\habot-react-project\src\assets\sent.png");
+    background-position: 10px center; /* Adjust position of the icon */
+  }
+  .icon-input:last-of-type {
+    background-image: url("D:\07.Git\30.Habot project\habot-react-project\src\assets\icons8-location-24.png");
+    background-position: 10px center; /* Adjust position of the icon */
+  }
+ 
+D:/07.Git/30.Habot project/habot-pro/habot-project/src/assets/icons8-location-24.png
+ 
+D:/07.Git/30.Habot project/habot-pro/habot-project/src/assets/sent.png
+ 
+
+  .icon-input:first-of-type {
+    background-image: url("../../assets/sent.png");
+  }
+  
+  .icon-input:last-of-type {
+    background-image: url("../../assets/icons8-location-24.png");
+  }
+ 
+../../assets/icons8-location-24.png
+ 
+../../assets/sent.png
+ 
+
+import Dashboard from "../Dashboard/Dashboard";
+ 
+../../assets/hero-habot.PNG
+ 
+../../assets/hero-habot.PNG
+ 
+/* Base styles for Hero section */
+.hero {
+  width: 100%;
+  min-height: 523px;
+  background: linear-gradient(
+      356.01deg,
+      rgba(7, 47, 87, 0.75) 50.8%,
+      rgba(7, 47, 87, 0) 94.58%
+    ),
+    linear-gradient(0deg, rgba(7, 47, 87, 0.45), rgba(7, 47, 87, 0.45)),
+    url("../../assets/hero-habot.PNG");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Add some padding for better spacing on small screens */
+}
+
+.hero-text {
+  width: 100%;
+  max-width: 935px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 3rem; /* Adjusted for responsiveness */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.hero-text h3 {
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem; /* Adjusted for responsiveness */
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.hero-inputs {
+  display: flex;
+  flex-wrap: wrap; /* Allow inputs to wrap on small screens */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.hero-inputs input {
+  width: 100%;
+  max-width: 400px;
+  height: 56px;
+  padding: 0 40px; /* Adjust padding for the icon */
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  color: black;
+  margin: 5px;
+  background-size: 24px; /* Adjust size of the icon */
+  background-position: 10px center; /* Adjust position of the icon */
+  background-repeat: no-repeat;
+}
+
+.icon-input:first-of-type {
+  background-image: url("../../assets/sent.png");
+}
+
+.icon-input:last-of-type {
+  background-image: url("../../assets/icons8-location-24.png");
+}
+
+.hero-inputs button {
+  width: 100%;
+  max-width: 120px;
+  height: 56px;
+  padding: 0 20px;
+  border-radius: 5px;
+  border: none;
+  background: #00732f;
+  color: #fff;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.hero-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-footer b {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.hero-footer a {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-left: 6px;
+  text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem; /* Smaller font size on small screens */
+  }
+
+  .hero-text h3 {
+    font-size: 1.25rem; /* Smaller font size on small screens */
+  }
+
+  .hero-inputs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-inputs input,
+  .hero-inputs button {
+    width: 90%;
+    margin: 5px 0; /* Adjust spacing between inputs */
+  }
+
+  .hero-footer {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+ 
+.hero {
+  width: 100%;
+  min-height: 523px;
+  background: linear-gradient(
+      356.01deg,
+      rgba(7, 47, 87, 0.75) 50.8%,
+      rgba(7, 47, 87, 0) 94.58%
+    ),
+    linear-gradient(0deg, rgba(7, 47, 87, 0.45), rgba(7, 47, 87, 0.45)),
+    url("../../assets/hero-habot.PNG");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); */
+}
+
+
+.hero-text {
+  width: 935px;
+  height: 122px;
+  top: 210px;
+  left: 298px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 66px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.hero-text h1 {
+  font-family: Poppins;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 66px;
+  text-align: center;
+  margin-bottom: 0; /* Remove default margin */
+}
+
+.hero-text h3 {
+  font-family: Poppins;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 66px;
+  text-align: center;
+}
+
+.hero-inputs {
+  margin-top: 40px;
+  /* Adjust margin as per your design */
+}
+
+.hero-inputs input {
+  width: 400px;
+  height: 56px;
+  padding: 1px 0px 2px 40px; /* Adjust padding for the icon */
+  border-radius: 5px; /* Simplified border-radius */
+  border: 1px solid transparent;
+  background-color: #fff; /* Adjust opacity as needed */
+  color: black;
+  margin-right: 10px; /* Adjust spacing between inputs */
+  background-image: url("../../assets/logo.png");
+  background-size: 24px; /* Adjust size of the icon */
+  background-position: 10px center; /* Adjust position of the icon */
+  background-repeat: no-repeat;
+}
+.icon-input:first-of-type {
+  background-image: url("../../assets/sent.png");
+  background-position: 10px center; /* Adjust position of the icon */
+}
+.icon-input:last-of-type {
+  background-image: url("../../assets/icons8-location-24.png");
+  background-position: 10px center; /* Adjust position of the icon */
+}
+
+.hero-inputs input ::placeholder {
+  color: black;
+}
+
+.hero-inputs button {
+  width: 117.94px;
+  height: 54px;
+  padding: 0px 32.8px 0px 33px;
+  border-radius: 5px 5px 5px 5px;
+  border: none;
+  background: #00732f;
+  color: #fff;
+  cursor: pointer;
+}
+.hero-footer {
+  top: 469px;
+  left: 435px;
+  margin-top: 30px;
+  height: 36px;
+  width: 642px;
+}
+.hero-footer b {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+}
+.hero-footer a {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  margin-left: 6px;
+  text-decoration: underline;
+}
+/* Media query for responsiveness */
+/* @media (max-width: 768px) {
+  .hero-text {
+    max-width: 90%;
+  }
+  .hero-inputs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-inputs input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+} */
+
+ 
+.hero {
+  width: 100%;
+  min-height: 523px;
+  background: linear-gradient(
+      356.01deg,
+      rgba(7, 47, 87, 0.75) 50.8%,
+      rgba(7, 47, 87, 0) 94.58%
+    ),
+    linear-gradient(0deg, rgba(7, 47, 87, 0.45), rgba(7, 47, 87, 0.45)),
+    url("../../assets/hero-habot.PNG");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); */
+}
+
+
+.hero-text {
+  width: 935px;
+  height: 122px;
+  top: 210px;
+  left: 298px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 66px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.hero-text h1 {
+  font-family: Poppins;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 66px;
+  text-align: center;
+  margin-bottom: 0; /* Remove default margin */
+}
+
+.hero-text h3 {
+  font-family: Poppins;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 66px;
+  text-align: center;
+}
+
+.hero-inputs {
+  margin-top: 40px;
+  /* Adjust margin as per your design */
+}
+
+.hero-inputs input {
+  width: 400px;
+  height: 56px;
+  padding: 1px 0px 2px 40px; /* Adjust padding for the icon */
+  border-radius: 5px; /* Simplified border-radius */
+  border: 1px solid transparent;
+  background-color: #fff; /* Adjust opacity as needed */
+  color: black;
+  margin-right: 10px; /* Adjust spacing between inputs */
+  background-image: url("../../assets/logo.png");
+  background-size: 24px; /* Adjust size of the icon */
+  background-position: 10px center; /* Adjust position of the icon */
+  background-repeat: no-repeat;
+}
+.icon-input:first-of-type {
+  background-image: url("../../assets/sent.png");
+  background-position: 10px center; /* Adjust position of the icon */
+}
+.icon-input:last-of-type {
+  background-image: url("../../assets/icons8-location-24.png");
+  background-position: 10px center; /* Adjust position of the icon */
+}
+
+.hero-inputs input ::placeholder {
+  color: black;
+}
+
+.hero-inputs button {
+  width: 117.94px;
+  height: 54px;
+  padding: 0px 32.8px 0px 33px;
+  border-radius: 5px 5px 5px 5px;
+  border: none;
+  background: #00732f;
+  color: #fff;
+  cursor: pointer;
+}
+.hero-footer {
+  top: 469px;
+  left: 435px;
+  margin-top: 30px;
+  height: 36px;
+  width: 642px;
+}
+.hero-footer b {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+}
+.hero-footer a {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  margin-left: 6px;
+  text-decoration: underline;
+}
+/* Media query for responsiveness */
+/* @media (max-width: 768px) {
+  .hero-text {
+    max-width: 90%;
+  }
+  .hero-inputs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-inputs input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+} */
+
+ 
+import React from "react";
+import "./Hero.css";
+import Dashboard from "../Dashboard/Dashboard";
+
+function Hero() {
+  return (
+    <div className="hero container">
+      <div className="hero-text">
+        <h1>Are You a Supplier?</h1>
+        <h3>Explore Matching Opportunities.</h3>
+      </div>
+      <div className="hero-inputs">
+        <input
+          className="icon-input"
+          placeholder="Search your required service here"
+        />
+        <input
+          className="icon-input"
+          placeholder="Search your desired location here"
+        />
+        <button className="hero-btn">Search</button>
+      </div>
+
+      <div className="hero-footer">
+        <b>Are you a buyer?</b>
+        <a>Click here if you are looking to post a requirements</a>
+      </div>
+    </div>
+  );
+}
+
+export default Hero;
+
+ 
+/* Base styles */
+.navbar-container {
+  width: 100%;
+  background: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  height: 10vh;
+}
+
+.logo {
+  width: 181px;
+  padding-left: 1rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 120px;
+    padding-left: 0.5rem;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%; /* Off-screen initially */
+    height: 100vh;
+    width: 250px;
+    background: #fff;
+    padding: 5rem 1rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease; /* Smooth transition */
+  }
+
+  .nav-links-container.active {
+    left: 0; /* Slide in */
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    padding: 1rem 0;
+  }
+
+  .button {
+    width: 193px;
+    text-align: center;
+  }
+
+  .button .content {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+  }
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  margin-left: 4px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+}
+
+.sidebar-logo {
+  width: 100px; /* Adjust size as needed */
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Center   the logo */
+}
+
+/* Media query for hiding logo in top navbar when screen size increases */
+@media screen and (min-width: 769px) {
+  .navbar-container .sidebar-logo {
+    display: none;
+  }
+}
+
+
+
+ 
+.sidebar-logo {
+  width: 100px; /* Adjust size as needed */
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Center   the logo */
+}
+
+/* Media query for hiding logo in top navbar when screen size increases */
+@media screen and (min-width: 769px) {
+  .navbar-container .sidebar-logo {
+    display: none;
+  }
+}
+ 
+
+  box-shadow: gray;
+ 
+.sidebar-logo {
+  width: 100px; /* Adjust size as needed */
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Center the logo */
+}
+ 
+import React, { useState } from "react";
+import "./Navbar.css";
+import logo from "../../assets/logo.png";
+import NavDropdown from "./navDropdown/NavDropdown";
+
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNav = () => {
+    console.log("ToggleNav clicked");
+    setIsOpen(!isOpen);
+  };
+  
+
+  return (
+    <nav className="navbar-container">
+      <img src={logo} alt="logo" className="logo" />
+      <div className="menu-icon" onClick={toggleNav}>
+        &#9776;
+      </div><div className={`nav-links-container ${isOpen ? "active" : ""}`}>
+  {isOpen && (
+    <img src={logo} alt="logo" className="sidebar-logo" />
+  )}
+  <ul className="nav-links">
+    <li>Find Suppliers</li>
+    <li>
+      <NavDropdown />
+    </li>
+    <li>
+      <button className="button">
+        <span className="content">
+          <a href="login">Login</a> <span>/</span>{" "}
+          <a href="signup">Sign Up</a>
+        </span>
+      </button>
+    </li>
+  </ul>
+</div>
+
+
+
+    </nav>
+  );
+}
+
+export default Navbar;
+
+ 
+import React, { useState } from "react";
+import "./Navbar.css";
+import logo from "../../assets/logo.png";
+import NavDropdown from "./navDropdown/NavDropdown";
+
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNav = () => {
+    console.log("ToggleNav clicked");
+    setIsOpen(!isOpen);
+  };
+  
+
+  return (
+    <nav className="navbar-container">
+      <img src={logo} alt="logo" className="logo" />
+      <div className="menu-icon" onClick={toggleNav}>
+        &#9776;
+      </div>
+      <div className={`nav-links-container ${isOpen ? "active" : ""}`}>
+  {isOpen && (
+    <img src={logo} alt="logo" className="sidebar-logo" />
+  )}
+  <ul className="nav-links">
+    <li>Find Suppliers</li>
+    <li>
+      <NavDropdown />
+    </li>
+    <li>
+      <button className="button">
+        <span className="content">
+          <a href="login">Login</a> <span>/</span>{" "}
+          <a href="signup">Sign Up</a>
+        </span>
+      </button>
+    </li>
+  </ul>
+</div>
+
+
+
+
+    </nav>
+  );
+}
+
+export default Navbar;
+
+ 
+<div className={`nav-links-container ${isOpen ? "active" : ""}`}>
+  {isOpen && (
+    <img src={logo} alt="logo" className="sidebar-logo" />
+  )}
+  <ul className="nav-links">
+    <li>Find Suppliers</li>
+    <li>
+      <NavDropdown />
+    </li>
+    <li>
+      <button className="button">
+        <span className="content">
+          <a href="login">Login</a> <span>/</span>{" "}
+          <a href="signup">Sign Up</a>
+        </span>
+      </button>
+    </li>
+  </ul>
+</div>
+ 
+
+      <div className={"nav-links-container " + (isOpen ? "active" : "")}>
+  {isOpen && (
+    <img src={logo} alt="logo" className="sidebar-logo" />
+  )}
+  <ul className="nav-links">
+    <li>Find Suppliers</li>
+    <li>
+      <NavDropdown />
+    </li>
+    <li>
+      <button className="button">
+        <span className="content">
+          <a href="login">Login</a> <span>/</span>{" "}
+          <a href="signup">Sign Up</a>
+        </span>
+      </button>
+    </li>
+  </ul>
+</div>
+ 
+ <div className={`nav-links-container ${isOpen ? "active" : ""}`}>
+  {isOpen && (
+    <img src={logo} alt="logo" className="sidebar-logo" />
+  )}
+  <ul className="nav-links">
+    <li>Find Suppliers</li>
+    <li>
+      <NavDropdown />
+    </li>
+    <li>
+      <button className="button">
+        <span className="content">
+          <a href="login">Login</a> <span>/</span>{" "}
+          <a href="signup">Sign Up</a>
+        </span>
+      </button>
+    </li>
+  </ul>
+</div>
+ 
+<div className={isOpen ? "nav-links-container active" : "nav-links-container"}>
+        <ul className="nav-links">
+          <li>Find Suppliers</li>
+          <li>
+            <NavDropdown />
+          </li>
+          <li>
+            <button className="button">
+              <span className="content">
+                <a href="login">Login</a> <span>/</span>{" "}
+                <a href="signup">Sign Up</a>
+              </span>
+            </button>
+          </li>
+        </ul>
+      </div>
+ 
+<div className={isOpen ? "nav-links-container active" : "nav-links-container"}>
+        <ul className="nav-links">
+          <li>Find Suppliers</li>
+          <li>
+            <NavDropdown />
+          </li>
+          <li>
+            <button className="button">
+              <span className="content">
+                <a href="login">Login</a> <span>/</span>{" "}
+                <a href="signup">Sign Up</a>
+              </span>
+            </button>
+          </li>
+        </ul>
+      </div>
+ 
+<div className={isOpen ? "nav-links-container active" : "nav-links-container"}>
+        <ul className="nav-links">
+          <li>Find Suppliers</li>
+          <li>
+            <NavDropdown />
+          </li>
+          <li>
+            <button className="button">
+              <span className="content">
+                <a href="login">Login</a> <span>/</span>{" "}
+                <a href="signup">Sign Up</a>
+              </span>
+            </button>
+          </li>
+        </ul>
+      </div>
+ 
+
+  margin-bottom: 0rem; /* Space below the logo */
+ 
+width="100px" 
+ 
+/* Base styles */
+.navbar-container {
+  width: 100%;
+  background: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  height: 10vh;
+}
+
+.logo {
+  width: 181px;
+  padding-left: 1rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 120px;
+    padding-left: 0.5rem;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%; /* Ensure it's off-screen initially */
+    height: 100vh;
+    width: 250px;
+    background: #fff;
+    padding: 5rem 1rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease; /* Smooth transition */
+  }
+
+  .nav-links.active {
+    left: 0; /* Bring it on-screen */
+  }
+
+  nav ul li {
+    padding: 1rem 0;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .button .content {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+  }
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  margin-left: 4px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+}
+
+ 
+/* Base styles */
+nav.navbar-container {
+  width: 100%;
+  background: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  height: 10vh;
+}
+
+.logo {
+  width: 181px;
+  padding-left: 1rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+.find-icon {
+  display: none;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 120px;
+    padding-left: 0.5rem;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 250px;
+    background: #fff;
+    padding: 5rem 1rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  nav ul li {
+    padding: 1rem 0;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .button .content {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+  }
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  margin-left: 4px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+}
+
+ 
+NavDropdown
+ 
+import React, { useState } from "react";
+import "./Navbar.css";
+import logo from "../../assets/logo.png";
+import NavDropdown from "./navDropdown/NavDropdown";
+
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNav = () => {
+    console.log("ToggleNav clicked");
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="navbar-container">
+      <img src={logo} alt="logo" className="logo" />
+      <div className="menu-icon" onClick={toggleNav}>
+        &#9776;
+      </div>
+      <ul className={isOpen ? "nav-links active" : "nav-links"}>
+        <li>Find Suppliers</li>
+        <li>
+          <NavDropdown />
+        </li>
+        <li>
+          <button className="button">
+            <span className="content">
+              <a href="login">Login</a> <span>/</span>{" "}
+              <a href="signup">Sign Up</a>
+            </span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+export default Navbar;
+
+ 
+./NavDropdown/NavDropdown
+ 
+import React, { useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
+
+const NavDropdown = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="dropdown">
+      <li className="dropdown-toggle" onClick={toggleDropdown}>
+        Find Service Tags
+        <IoIosArrowDown className="dropdown-icon" />
+      </li>
+      {isOpen && (
+        <ul className="dropdown-menu">
+          <li>Option 1</li>
+          <li>Option 2</li>
+          <li>Option 3</li>
+        </ul>
+      )}
+    </div>
+  );
+};
+
+export default NavDropdown;
+
+ 
+import React, { useState } from "react";
+import "./Navbar.css";
+import logo from "../../assets/logo.png";
+import NavDropdown from "./navDropdown/NavDropdown";
+
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="navbar-container">
+      <img src={logo} alt="logo" className="logo" />
+      <div className="menu-icon" onClick={toggleNav}>
+        &#9776;
+      </div>
+      <ul className={isOpen ? "nav-links active" : "nav-links"}>
+        <li>Find Suppliers</li>
+        <li>
+          <NavDropdown />
+        </li>
+        <li>
+          <button className="button">
+            <span className="content">
+              <a href="login">Login</a> <span>/</span>{" "}
+              <a href="signup">Sign Up</a>
+            </span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+export default Navbar;
+
+ 
+nav {
+  width: 100%;
+  background: #fff;
+  padding: 4px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  height: 10vh;
+}
+.logo {
+  width: 181px;
+  padding-left: 50px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  font-size: 16px;
+  padding-left: 15px;
+}
+.find-icon {
+  position: "relative";
+  display: inline-block;
+}
+.find-icon li {
+  cursor: "pointer";
+  list-style: none;
+}
+
+ 
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  margin-left: 4px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+}
+
+@media (min-width: 769px) {
+  .dropdown-menu {
+    flex-direction: row;
+  }
+}
+ 
+import React, { useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
+
+const NavDropdown = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="dropdown">
+      <li className="dropdown-toggle" onClick={toggleDropdown}>
+        Find Service Tags
+        <IoIosArrowDown className="dropdown-icon" />
+      </li>
+      {isOpen && (
+        <ul className="dropdown-menu">
+          <li>Option 1</li>
+          <li>Option 2</li>
+          <li>Option 3</li>
+        </ul>
+      )}
+    </div>
+  );
+};
+
+export default NavDropdown;
+
+ 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  margin-left: 4px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+}
+
+ 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  margin-left: 4px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+}
+
+ 
+import React, { useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
+
+const NavDropdown = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="dropdown">
+      <li className="dropdown-toggle" onClick={toggleDropdown}>
+        Find Service Tags
+        <IoIosArrowDown className="dropdown-icon" />
+      </li>
+      {isOpen && (
+        <ul className="dropdown-menu">
+          <li>Option 1</li>
+          <li>Option 2</li>
+          <li>Option 3</li>
+        </ul>
+      )}
+    </div>
+  );
+};
+
+export default NavDropdown;
+
+ 
+/* Base styles */
+nav {
+  width: 100%;
+  background: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  height: 10vh;
+}
+
+.logo {
+  width: 181px;
+  padding-left: 1rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+.find-icon {
+  display: none;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 120px;
+    padding-left: 0.5rem;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 250px;
+    background: #fff;
+    padding: 5rem 1rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  nav ul li {
+    padding: 1rem 0;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .button .content {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+  }
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  margin-left: 4px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+}
+
+ 
+import React, { useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
+
+const NavDropdown = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="dropdown">
+      <li className="dropdown-toggle" onClick={toggleDropdown}>
+        Find Service Tags
+        <IoIosArrowDown className="dropdown-icon" />
+      </li>
+      {isOpen && (
+        <ul className="dropdown-menu">
+          <li>Option 1</li>
+          <li>Option 2</li>
+          <li>Option 3</li>
+        </ul>
+      )}
+    </div>
+  );
+};
+
+export default NavDropdown;
+
+ 
+import React, { useState } from "react";
+import "./Navbar.css";
+import logo from "../../assets/logo.png";
+import NavDropdown from './navDropdown/NavDropdown'
+
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="container">
+      <img src={logo} alt="logo" className="logo" />
+      <div className="menu-icon" onClick={toggleNav}>
+        &#9776;
+      </div>
+      <ul className={isOpen ? "nav-links active" : "nav-links"}>
+        <li>Find Suppliers</li>
+        <li>
+          <NavDropdown />
+        </li>
+        <li>
+          <button className="button">
+            <span className="content">
+              <a href="login">Login</a> <span>/</span>{" "}
+              <a href="signup">Sign Up</a>
+            </span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+export default Navbar;
+
+ 
+/* Base styles */
+nav {
+  width: 100%;
+  background: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  height: 10vh;
+}
+
+.logo {
+  width: 181px;
+  padding-left: 1rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+.find-icon {
+  display: none;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 120px;
+    padding-left: 0.5rem;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    padding: 5rem 1rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 1rem 0;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .button .content {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+  }
+}
+
+/* Adjust the button styles */
+.button {
+  width: 193.31px;
+  height: 50px;
+  top: 10px;
+  left: 641.36px;
+  gap: 0px;
+  border-radius: 5px;
+  border: 1px solid #00732f;
+  opacity: 1;
+  background-color: #fff;
+}
+
+.button .content {
+  width: 151.51px;
+  height: 16px;
+  top: 1px;
+  left: 21px;
+  gap: 0px;
+  opacity: 1;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  color: #00732f;
+}
+
+ 
+import React, { useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
+
+const Dropdown = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div style={{ position: "relative", display: "inline-block" }}>
+      <li
+        style={{
+          listStyle: "none",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        Find Service Tags{" "}
+        <IoIosArrowDown
+          onClick={toggleDropdown}
+          style={{ marginLeft: "4px", cursor: "pointer" }}
+        />
+      </li>
+      {isOpen && (
+        <ul
+          style={{
+            position: "absolute",
+            top: "100%",
+            left: 0,
+            backgroundColor: "white",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+            listStyle: "none",
+            padding: "10px",
+            margin: 0,
+            zIndex: 1,
+          }}
+        >
+          <li style={{ padding: "8px 12px" }}>Option 1</li>
+          <li style={{ padding: "8px 12px" }}>Option 2</li>
+          <li style={{ padding: "8px 12px" }}>Option 3</li>
+        </ul>
+      )}
+    </div>
+  );
+};
+
+export default Dropdown;
+
+ 
+
+import NavDropdown from "./NavDropdown"; 
+ 
+import React, { useState } from "react";
+import "./Navbar.css";
+import logo from "../../assets/logo.png";
+import NavDropdown from './navDropdown/NavDropdown'
+
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="container">
+      <img src={logo} alt="logo" className="logo" />
+      <div className="menu-icon" onClick={toggleNav}>
+        &#9776;
+      </div>
+      <ul className={isOpen ? "nav-links active" : "nav-links"}>
+        <li>Find Suppliers</li>
+        <li>
+          <NavDropdown />
+        </li>
+        <li>
+          <button className="button">
+            <span className="content">
+              <a href="login">Login</a> <span>/</span>{" "}
+              <a href="signup">Sign Up</a>
+            </span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+export default Navbar;
+
+ 
+
+import NavDropdown from "./NavDropdown"; 
+ 
+// Navbar.jsx
+
+import React, { useState } from "react";
+import "./Navbar.css";
+import logo from "../../assets/logo.png";
+import NavDropdown from "./navDropdown/NavDropdown";
+
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="container">
+      <img src={logo} alt="" className="logo" />
+      <div className="menu-icon" onClick={toggleNav}>
+        &#9776;
+      </div>
+      <ul className={isOpen ? "nav-links active" : "nav-links"}>
+        <li>Find Suppliers</li>
+        <li>
+          <NavDropdown />
+        </li>
+        <li>
+          <button className="button">
+            <span className="content">
+              <a href="login">Login</a> <span>/</span>{" "}
+              <a href="signup">Sign Up</a>
+            </span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+export default Navbar;
+
+ 
+/* Base styles */
+nav {
+  width: 100%;
+  background: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  height: 10vh;
+}
+
+.logo {
+  width: 181px; /* Adjust as needed */
+  padding-left: 1rem; /* Adjust as needed */
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 1rem; /* Adjust as needed */
+  padding: 0 1rem; /* Adjust as needed */
+}
+
+.find-icon {
+  display: none; /* Hide initially on larger screens */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 120px; /* Adjust as needed */
+    padding-left: 0.5rem; /* Adjust as needed */
+  }
+
+  nav ul {
+    display: none; /* Hide the main nav on smaller screens */
+  }
+
+  .find-icon {
+    display: inline-block; /* Show the find icon on smaller screens */
+    margin-right: 1rem; /* Adjust as needed */
+  }
+
+  .find-icon li {
+    cursor: pointer;
+    list-style: none;
+  }
+}
+
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none; /* Hide initially on larger screens */
+}
+
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 120px;
+    padding-left: 0.5rem;
+  }
+
+  .menu-icon {
+    display: block; /* Show the menu icon on smaller screens */
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    padding: 5rem 1rem 1rem; /* Adjust as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+ 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+.container {
+  padding-left: 20px;
+  padding-right: 50px;
+  align-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+.button {
+  width: 193.31px;
+  height: 50px;
+  top: 10px;
+  left: 641.36px;
+  gap: 0px;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid #00732f;
+  opacity: 1; /* opacity ko 1 kar diya */
+  background-color: #fff; /* background color set kiya */
+}
+.button .content {
+  width: 151.51px;
+  height: 16px;
+  top: 1px;
+  left: 21px;
+  gap: 0px;
+  opacity: 1; /* opacity ko 1 kar diya */
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  color: #00732f; /* text color set kiya */
+}
+
+ 
+
+    /* justify-content: space-around; */
+ 
+
+          <img src={adminLogo} width="140px" />
+ 
+
+import adminLogo from "../../../assets/admin logo.png";
+ 
+
+          <img src={adminLogo} width="140px" />
+ 
+
+        <FaAddressBook size="100px"/>
+ 
+
+import { FaAddressBook } from "react-icons/fa";
+ 
+<img src={adminLogo} width="140px" />
+ 
+
+          <img src={adminLogo} width="140px" />
+ 
+
+          <img src={adminLogo} width="140px" />
+ 
+
+.flex-box img {
+    width: 50%; /* Adjust image width as needed */
+    margin-bottom: 20px; /* Optional: Add margin at the bottom of the image */
+}
+
+ 
+
+          <img src="FaAddressBook" width="140px" />
+ 
+<FaAddressBook />
+ 
+{adminLogo}
+ 
+ <img src={adminLogo} width="140px" />
+ 
+
+    background-color: gray;
+ 
+
+    color: black;
+ 
+
+    background-color: aqua;
+ 
+
+.flex-box {
+    width: 30%; /* Adjust width as needed */
+    border-radius: 5px;
+    height: 300px;
+    background-color: gray;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+}
+ 
+.buyers-container {
+    width: 1080px;
+    height: 60px;
+    margin-top: 50px;
+    margin-left: 100px; /* Left margin */
+    background-color: aqua;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flex-box {
+    width: 30%; /* Adjust width as needed */
+    border-radius: 5px;
+    height: 300px;
+    background-color: gray;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+    margin: 0; /* Remove margin */
+}
+
+.flex-box h1{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    width: 206px;
+}
+
+.flex-box img {
+    width: 50%; /* Adjust image width as needed */
+    margin-bottom: 20px; /* Optional: Add margin at the bottom of the image */
+}
+
+.buyers-header{
+    text-align: center;
+    width: 839px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 220px;
+}
+ 
+
+.flex-box {
+    width: 30%; /* Adjust width as needed */
+    border-radius: 5px;
+    height: 300px;
+    background-color: gray;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+    margin: 0; /* Remove margin */
+}
+ 
+
+    background-color: gray;
+ 
+
+    background-color: aqua;
+ 
+
+    margin-top: 10px;
+ 
+
+.flex-box {
+    width: 30%; /* Adjust width as needed */
+    border-radius: 5px;
+    height: 300px;
+    background-color: gray;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+}
+ 
+
+    margin-top: 50px;
+ 
+ Top margin
+ 
+
+    <div className="">
+ 
+/* Top margin */
+    margin-left: 100px;
+ 
+Select Your Role and Sign Up
+ 
+Select Your Role and Sign Up
+ 
+Select Your Role and Sign Up
+ 
+Select Your Role and Sign Up
+ 
+Select Your Role and Sign Up
+ 
+<div className="flex-box"> box 3</div>
+ 
+<div className="flex-box"> box 2</div>
+ 
+      <div className="flex-box">box 1</div>
+
+ 
+<div className="flex-box"> box 3</div>
+ 
+<div className="flex-box"> box 2</div>
+ 
+ box 3
+ 
+ box 2
+ 
+box 1
+ 
+box 3
+ 
+box 2
+ 
+idth: 30%;
+    border-radius: 5px;
+    height: 260px;
+    background-color: gray;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flex-box img{
+    width: 50%;
+}
+ 
+
+    justify-content: ;
+ 
+
+import { RiAdminFill } from "react-icons/ri";
+ 
+const posts = [
+    {
+      icon: <RiAdminFill />,
+      text: "Select Your Role and Sign Up",
+    },
+    {
+      icon: "",
+      text: "Buyers Post Your Requirements",
+    },
+    {
+      icon: "",
+      text: " Review, Select, and Contact the Best Suppliers",
+    },
+    {
+      icon: "",
+      text: "Suppliers Complete your profile and get notified for opportunities",
+    },
+    {
+      icon: "",
+      text: "Contact to Buyers and Share your Quote for the service",
+    },
+    {
+      icon: "",
+      text: "Both the Parties can Connect and Make Business Leave a Feedback",
+    },
+  ];
+ 
+
+    height: 200px;
+ 
+
+    margin-top: 100px;
+ 
+
+    flex-wrap: wrap-reverse;
+ 
+
+    column;
+ 
+
+    colum;
+ 
+
+     </div>
+ 
+
+     <div className='flex-container'>
+ 
+
+.flex-container{
+    
+}
+ 
+
+    display: flex;
+ 
+.buyers-post{
+    width: 400px;
+    height: 254px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    border: 1px solid beige;
+}
+.buyers-post{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    align-items: center;
+}
+.buyers-top{
+    width: 100%;
+    display: flex;
+}
+.buyers-bottom{
+    width: 100%;
+    display: flex;
+}
+  
+ 
+ <div className='buyers-top'>
+      
+      </div>
+ 
+
+      {posts.slice(0,3).map((post, index) => (
+        <div key={index} className='buyers-post-bottom'>
+          {post.icon && post.icon} {/* Agar icon available hai toh show kare, warna blank */}
+          <span>{post.text}</span>
+        </div>
+      ))}
+ 
+
+.buyers-post{
+    width: 350px;
+    flex-direction: row;
+
+}
+ 
+ers-post svg {
+    width: 24px; /* Icon ka size */
+    height: 24px; /* Icon ka size */
+    margin-right: 10px; /* Icon ke text se thoda space add karein */
+  }
+ 
+
+
+.buyers-container {
+    display: flex;
+    flex-direction: row; /* Post ko vertically stack karein */
+    align-items: center; /* Post ko center mein rakhe */
+  }
+  
+  .buyers-post {
+    width: 150px;
+    display: flex;
+    align-items: center; /* Post ko center mein rakhe */
+    margin-bottom: 20px; /* Har post ke beech mein thoda space add karein */
+  }
+  
+ 
+.buyers-container {
+    width: 1080px;
+    height: 508px;
+    margin-top: 100px; /* Top margin */
+    margin-left: 100px; /* Left margin */
+    background-color: aqua;
+    display: flex;
+}
+
+.buyers-container {
+    display: flex;
+    flex-direction: row; /* Post ko vertically stack karein */
+    align-items: center; /* Post ko center mein rakhe */
+  }
+  
+  .buyers-post {
+    width: 350px;
+    display: flex;
+    align-items: center; /* Post ko center mein rakhe */
+    margin-bottom: 20px; /* Har post ke beech mein thoda space add karein */
+  }
+  
+  .buyers-post svg {
+    width: 24px; /* Icon ka size */
+    height: 24px; /* Icon ka size */
+    margin-right: 10px; /* Icon ke text se thoda space add karein */
+  }
+  
+ 
+
+    align-items: center;
+ 
+.buyers-container {
+    width: 1080px;
+    height: 508px;
+    margin-top: 100px; /* Top margin */
+    margin-left: 100px; /* Left margin */
+    background-color: aqua;
+}
+
+
+ 
+import React from 'react'
+import './BuyersPost.css'
+import { RiAdminFill } from "react-icons/ri";
+
+function BuyersPost() {
+  const posts= [
+    {
+      icon:<RiAdminFill />,
+      text: "Select Your Role and Sign Up",
+    },
+    {
+      icon:"",
+      text: "Buyers Post Your Requirements",
+    },
+    {
+      icon:"",
+      text: " Review, Select, and Contact the Best Suppliers",
+    },
+    {
+      icon:"",
+      text: "Suppliers Complete your profile and get notified for opportunities",
+    },
+    {
+      icon:"",
+      text: "Contact to Buyers and Share your Quote for the service",
+    },
+    {
+      icon:"",
+      text: "Both the Parties can Connect and Make Business Leave a Feedback",
+    },
+    
+  ];
+  return (
+    <div className='buyers-container'>
+    {
+      posts.map((post)=>{
+        return (<>
+          <div className='buyers-post'>{post.text}</div>
+        </>)
+      })
+    }
+    </div>
+  )
+}
+
+export default BuyersPost
+
+ 
+import React from 'react'
+import './BuyersPost.css'
+import { RiAdminFill } from "react-icons/ri";
+
+function BuyersPost() {
+  const posts= [
+    {
+      icon:<RiAdminFill />,
+      text: "Select Your Role and Sign Up",
+    },
+    {
+      icon:"",
+      text: "Buyers Post Your Requirements",
+    },
+    {
+      icon:"",
+      text: " Review, Select, and Contact the Best Suppliers",
+    },
+    {
+      icon:"",
+      text: "Suppliers Complete your profile and get notified for opportunities",
+    },
+    {
+      icon:"",
+      text: "Contact to Buyers and Share your Quote for the service",
+    },
+    {
+      icon:"",
+      text: "Both the Parties can Connect and Make Business Leave a Feedback",
+    },
+    
+  ];
+  return (
+    <div className='buyers-container'>
+    {
+      posts.map(()=>{
+        return (<>
+          <div className='buyers-post'>{posts.text}</div>
+        </>)
+      })
+    }
+    </div>
+  )
+}
+
+export default BuyersPost
+
+ 
+import React from 'react'
+import './BuyersPost.css'
+import { RiAdminFill } from "react-icons/ri";
+
+function BuyersPost() {
+  const posts= [
+    {
+      icon:<RiAdminFill />,
+      text: "Select Your Role and Sign Up",
+    },
+    {
+      icon:"",
+      text: "Buyers Post Your Requirements",
+    },
+    {
+      icon:"",
+      text: " Review, Select, and Contact the Best Suppliers",
+    },
+    {
+      icon:"",
+      text: "Suppliers Complete your profile and get notified for opportunities",
+    },
+    {
+      icon:"",
+      text: "Contact to Buyers and Share your Quote for the service",
+    },
+    {
+      icon:"",
+      text: "Both the Parties can Connect and Make Business Leave a Feedback",
+    },
+    
+  ];
+  return (
+    <div className='buyers-container'>
+    {
+      posts.map(()=>{
+        return (<>
+          <div className='buyers-post'>{posts.text}</div>
+        </>)
+      })
+    }
+    </div>
+  )
+}
+
+export default BuyersPost
+
+ 
+ style={{color:"black"}}
+ 
+
+     <div></div>
+ 
+ hello
+ 
+Contact to Buyers and Share your Quote for the service
+ 
+Suppliers Complete your profile and get notified for opportunities
+ 
+Review, Select, and Contact the Best Supplier
+ 
+"Buyers Post Your Requirements
+ 
+Select Your Role and Sign Up
+ 
+Abu Dhabi
+ 
+ {
+      icon:"",
+      text: "Dubai",
+    },
+    {
+      text: "Sharjah & Ajman",
+      link: "/reports",
+    },
+    {
+      text: "Fujairah",
+      link: "/calendar",
+    },
+    {
+      text: "Ras Al Khaimah",
+      link: "/configuration",
+    },
+    {
+      text: "Umm Al Quwain",
+      link: "/account",
+    },
+ 
+
+      link: "/",
+ 
+
+      link: "/journal",
+ 
+
+    margin: auto; /* Center horizontally */
+ 
+
+    float: ;
+ 
+left
+ 
+.buyers-container{
+    width: 1200px;
+    height: 508px;
+    top: 214px;
+    left: 156px;
+    background-color: aqua;
+    margin-top: 100px;
+    margin: auto;
+}
+ 
+
+    margin-top: 100px;
+ 
+
+    justify-content: center;
+ 
+#000
+ 
+
+.supp-left h1{
+    /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0; /* Remove default margin */
+  text-align: center;
+}
+ 
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0; /* Remove default margin */
+  text-align: center;
+ 
+
+  width: 50%;
+ 
+
+    display: grid;
+  place-items: center;
+  width: 50%;
+ 
+
+    display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; 
+ 
+
+    width: 50%;
+ 
+
+    margin: c;
+ 
+
+    align-items: center;
+ 
+
+    justify-items: center;
+ 
+
+    justify-content: center;
+    align-items: center;
+ 
+
+    text-align: center;
+ 
+
+}
+ 
+
+.supp-left{
+
+ 
+
+    padding-top: 20px;
+    padding-left: 20px;
+ 
+#000
+ 
+.hero {
+  width: 100%;
+  min-height: 523px;
+  background: linear-gradient(
+      356.01deg,
+      rgba(7, 47, 87, 0.75) 50.8%,
+      rgba(7, 47, 87, 0) 94.58%
+    ),
+    linear-gradient(0deg, rgba(7, 47, 87, 0.45), rgba(7, 47, 87, 0.45)),
+    url("../../assets/hero-habot.PNG");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); */
+}
+
+
+.hero-text {
+  width: 935px;
+  height: 122px;
+  top: 210px;
+  left: 298px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 66px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.hero-text h1 {
+  font-family: Poppins;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 66px;
+  text-align: center;
+  margin-bottom: 0; /* Remove default margin */
+}
+
+.hero-text h3 {
+  font-family: Poppins;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 66px;
+  text-align: center;
+}
+
+.hero-inputs {
+  margin-top: 40px;
+  /* Adjust margin as per your design */
+}
+
+.hero-inputs input {
+  width: 400px;
+  height: 56px;
+  padding: 1px 0px 2px 40px; /* Adjust padding for the icon */
+  border-radius: 5px; /* Simplified border-radius */
+  border: 1px solid transparent;
+  background-color: #fff; /* Adjust opacity as needed */
+  color: black;
+  margin-right: 10px; /* Adjust spacing between inputs */
+  background-image: url("../../assets/logo.png");
+  background-size: 24px; /* Adjust size of the icon */
+  background-position: 10px center; /* Adjust position of the icon */
+  background-repeat: no-repeat;
+}
+.icon-input:first-of-type {
+  background-image: url("../../assets/sent.png");
+  background-position: 10px center; /* Adjust position of the icon */
+}
+.icon-input:last-of-type {
+  background-image: url("../../assets/icons8-location-24.png");
+  background-position: 10px center; /* Adjust position of the icon */
+}
+
+.hero-inputs input ::placeholder {
+  color: black;
+}
+
+.hero-inputs button {
+  width: 117.94px;
+  height: 54px;
+  padding: 0px 32.8px 0px 33px;
+  border-radius: 5px 5px 5px 5px;
+  border: none;
+  background: #00732f;
+  color: #fff;
+  cursor: pointer;
+}
+.hero-footer {
+  top: 469px;
+  left: 435px;
+  margin-top: 30px;
+  height: 36px;
+  width: 642px;
+}
+.hero-footer b {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+}
+.hero-footer a {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  margin-left: 6px;
+  text-decoration: underline;
+}
+/* Media query for responsiveness */
+/* @media (max-width: 768px) {
+  .hero-text {
+    max-width: 90%;
+  }
+  .hero-inputs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-inputs input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+} */
+
+ 
+/* Base styles */
+nav {
+  width: 100%;
+  background: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  height: 10vh;
+}
+
+.logo {
+  width: 181px; /* Adjust as needed */
+  padding-left: 1rem; /* Adjust as needed */
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 1rem; /* Adjust as needed */
+  padding: 0 1rem; /* Adjust as needed */
+}
+
+.find-icon {
+  display: none; /* Hide initially on larger screens */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 120px; /* Adjust as needed */
+    padding-left: 0.5rem; /* Adjust as needed */
+  }
+
+  nav ul {
+    display: none; /* Hide the main nav on smaller screens */
+  }
+
+  .find-icon {
+    display: inline-block; /* Show the find icon on smaller screens */
+    margin-right: 1rem; /* Adjust as needed */
+  }
+
+  .find-icon li {
+    cursor: pointer;
+    list-style: none;
+  }
+}
+
+ 
+// Navbar.jsx
+
+import React, { useState } from "react";
+import "./Navbar.css";
+import logo from "../../assets/logo.png";
+import NavDropdown from "./navDropdown/NavDropdown";
+
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="container">
+      <img src={logo} alt="" className="logo" />
+      <div className="menu-icon" onClick={toggleNav}>
+        &#9776;
+      </div>
+      <ul className={isOpen ? "nav-links active" : "nav-links"}>
+        <li>Find Suppliers</li>
+        <li>
+          <NavDropdown />
+        </li>
+        <li>
+          <button className="button">
+            <span className="content">
+              <a href="login">Login</a> <span>/</span>{" "}
+              <a href="signup">Sign Up</a>
+            </span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+export default Navbar;
+
+ 
+/* Base styles */
+nav {
+  width: 100%;
+  background: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  height: 10vh;
+}
+
+.logo {
+  width: 181px; /* Adjust as needed */
+  padding-left: 1rem; /* Adjust as needed */
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 1rem; /* Adjust as needed */
+  padding: 0 1rem; /* Adjust as needed */
+}
+
+.find-icon {
+  display: none; /* Hide initially on larger screens */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 120px; /* Adjust as needed */
+    padding-left: 0.5rem; /* Adjust as needed */
+  }
+
+  nav ul {
+    display: none; /* Hide the main nav on smaller screens */
+  }
+
+  .find-icon {
+    display: inline-block; /* Show the find icon on smaller screens */
+    margin-right: 1rem; /* Adjust as needed */
+  }
+
+  .find-icon li {
+    cursor: pointer;
+    list-style: none;
+  }
+}
+
+ 
+import React from "react";
+import "./Navbar.css";
+import logo from "../../assets/logo.png";
+import NavDropdown from "./navDropdown/NavDropdown";
+import { useState } from "react";
+
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsOpen(!isOpen);
+  };
+  return (
+    <nav className="container">
+      <img src={logo} alt="" className="logo" />
+      <div className="menu-icon" onClick={toggleNav}>
+        &#9776;
+      </div>
+      <ul>
+        <li>Find Suppliers</li>
+        <li>
+          <NavDropdown />
+        </li>
+
+        <li>
+          <button class="button">
+            <span class="content">
+              <a href="login">Login</a> <span>/</span> <a href="signup">Sign Up</a>
+            </span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+export default Navbar;
+
+ 
+nav {
+  width: 100%;
+  background: #fff;
+  padding: 4px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  height: 10vh;
+}
+.logo {
+  width: 181px;
+  padding-left: 50px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  font-size: 16px;
+  padding-left: 15px;
+}
+.find-icon {
+  position: "relative";
+  display: inline-block;
+}
+.find-icon li {
+  cursor: "pointer";
+  list-style: none;
+}
+
+ 
+D:/07.Git/30.Habot project/habot-pro/habot-project/src/assets/icons8-location-24.png
+ 
+D:/07.Git/30.Habot project/habot-pro/habot-project/src/assets/sent.png
+ 
+D:/07.Git/30.Habot project/habot-pro/habot-project/src/assets/sent.png
+ 
+../../assets/hero-habot.PNG
+ 
+../../assets/hero-habot.PNG
+ 
 
               Menu
  

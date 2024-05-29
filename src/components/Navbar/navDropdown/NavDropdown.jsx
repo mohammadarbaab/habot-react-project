@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
-const Dropdown = () => {
+const NavDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -9,41 +9,20 @@ const Dropdown = () => {
   };
 
   return (
-    <div style={{ position: "relative", display: "inline-block" }}>
-      <li
-        style={{
-          listStyle: "none",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        Find Service Tags{" "}
-        <IoIosArrowDown
-          onClick={toggleDropdown}
-          style={{ marginLeft: "4px", cursor: "pointer" }}
-        />
+    <div className="dropdown">
+      <li className="dropdown-toggle" onClick={toggleDropdown}>
+        Find Service Tags
+        <IoIosArrowDown className="dropdown-icon" />
       </li>
       {isOpen && (
-        <ul
-          style={{
-            position: "absolute",
-            top: "100%",
-            left: 0,
-            backgroundColor: "white",
-            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-            listStyle: "none",
-            padding: "10px",
-            margin: 0,
-            zIndex: 1,
-          }}
-        >
-          <li style={{ padding: "8px 12px" }}>Option 1</li>
-          <li style={{ padding: "8px 12px" }}>Option 2</li>
-          <li style={{ padding: "8px 12px" }}>Option 3</li>
+        <ul className="dropdown-menu">
+          <li>Option 1</li>
+          <li>Option 2</li>
+          <li>Option 3</li>
         </ul>
       )}
     </div>
   );
 };
 
-export default Dropdown;
+export default NavDropdown;

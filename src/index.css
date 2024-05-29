@@ -6,43 +6,130 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   background-color: #fff;
 }
+
 a {
   text-decoration: none;
   color: inherit;
   line-height: 1;
   cursor: pointer;
 }
+
 .container {
   padding-left: 20px;
   padding-right: 50px;
   align-content: center;
+  width: 100%;
+  overflow: hidden;
 }
+
 .button {
   width: 193.31px;
   height: 50px;
   top: 10px;
   left: 641.36px;
   gap: 0px;
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 5px;
   border: 1px solid #00732f;
-  opacity: 1; /* opacity ko 1 kar diya */
-  background-color: #fff; /* background color set kiya */
+  opacity: 1;
+  background-color: #fff;
 }
+
 .button .content {
   width: 151.51px;
   height: 16px;
   top: 1px;
   left: 21px;
   gap: 0px;
-  opacity: 1; /* opacity ko 1 kar diya */
+  opacity: 1;
   font-family: Inter;
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
   cursor: pointer;
-  color: #00732f; /* text color set kiya */
+  color: #00732f;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 30px;
+  }
+
+  .button {
+    width: 180px;
+    height: 45px;
+  }
+
+  .button .content {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+
+  .button {
+    width: 160px;
+    height: 40px;
+  }
+
+  .button .content {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+
+  .button {
+    width: 140px;
+    height: 35px;
+  }
+
+  .button .content {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-left: 2px;
+    padding-right: 5px;
+  }
+
+  .button {
+    width: 120px;
+    height: 30px;
+  }
+
+  .button .content {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    padding: 0 5px;
+  }
+
+  .button {
+    width: 100px;
+    height: 25px;
+  }
+
+  .button .content {
+    font-size: 10px;
+  }
 }

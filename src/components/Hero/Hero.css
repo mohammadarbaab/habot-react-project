@@ -1,3 +1,4 @@
+/* Base styles for Hero section */
 .hero {
   width: 100%;
   min-height: 523px;
@@ -9,127 +10,125 @@
     linear-gradient(0deg, rgba(7, 47, 87, 0.45), rgba(7, 47, 87, 0.45)),
     url("../../assets/hero-habot.PNG");
   background-size: cover;
-  display: flex;
-  flex-direction: column;
   background-position: center;
   color: #fff;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* position: absolute;
-  top: 50%;
-  left: 50%; 
-  transform: translate(-50%, -50%); */
+  padding: 20px;
 }
 
-
 .hero-text {
-  width: 935px;
-  height: 122px;
-  top: 210px;
-  left: 298px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: Poppins;
-  font-size: 55px;
-  font-weight: 700;
-  line-height: 66px;
+  width: 100%;
+  max-width: 935px;
   text-align: center;
-  margin-top: 70px;
+  margin-bottom: 20px;
 }
 
 .hero-text h1 {
-  font-family: Poppins;
-  font-size: 55px;
+  font-family: Poppins, sans-serif;
+  font-size: 3rem; /* Adjusted for responsiveness */
   font-weight: 700;
-  line-height: 66px;
-  text-align: center;
-  margin-bottom: 0; /* Remove default margin */
+  line-height: 1.2;
+  margin-bottom: 10px;
 }
 
 .hero-text h3 {
-  font-family: Poppins;
-  font-size: 55px;
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem; /* Adjusted for responsiveness */
   font-weight: 400;
-  line-height: 66px;
-  text-align: center;
+  line-height: 1.2;
 }
 
 .hero-inputs {
-  margin-top: 40px;
-  /* Adjust margin as per your design */
+  display: flex;
+  flex-direction: row; /* Display inputs in a row on larger screens */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 935px;
+  margin-top: 20px;
 }
 
 .hero-inputs input {
-  width: 400px;
+  width: calc(50% - 10px); /* Adjust the width to fit two inputs in one row */
   height: 56px;
-  padding: 1px 0px 2px 40px; /* Adjust padding for the icon */
-  border-radius: 5px; /* Simplified border-radius */
+  padding: 0 20px 0 40px; /* Adjust padding for the icon */
+  border-radius: 5px;
   border: 1px solid transparent;
-  background-color: #fff; /* Adjust opacity as needed */
+  background-color: #fff;
   color: black;
-  margin-right: 10px; /* Adjust spacing between inputs */
-  background-image: url("D:/07.Git/30.Habot project/habot-pro/habot-project/src/assets/sent.png");
+  margin: 5px;
   background-size: 24px; /* Adjust size of the icon */
   background-position: 10px center; /* Adjust position of the icon */
   background-repeat: no-repeat;
 }
+
 .icon-input:first-of-type {
-  background-image: url("D:/07.Git/30.Habot project/habot-pro/habot-project/src/assets/sent.png");
-  background-position: 10px center; /* Adjust position of the icon */
-}
-.icon-input:last-of-type {
-  background-image: url("D:/07.Git/30.Habot project/habot-pro/habot-project/src/assets/icons8-location-24.png");
-  background-position: 10px center; /* Adjust position of the icon */
+  background-image: url("../../assets/sent.png");
 }
 
-.hero-inputs input ::placeholder {
-  color: black;
+.icon-input:last-of-type {
+  background-image: url("../../assets/icons8-location-24.png");
 }
 
 .hero-inputs button {
-  width: 117.94px;
-  height: 54px;
-  padding: 0px 32.8px 0px 33px;
-  border-radius: 5px 5px 5px 5px;
+  width: auto;
+  height: 56px;
+  padding: 0 20px;
+  border-radius: 5px;
   border: none;
   background: #00732f;
   color: #fff;
   cursor: pointer;
+  margin: 5px;
 }
+
 .hero-footer {
-  top: 469px;
-  left: 435px;
-  margin-top: 30px;
-  height: 36px;
-  width: 642px;
+  text-align: center;
+  margin-top: 20px;
 }
+
 .hero-footer b {
-  font-family: Poppins;
-  font-size: 18px;
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 27px;
-  text-align: center;
+  line-height: 1.5;
 }
+
 .hero-footer a {
-  font-family: Poppins;
-  font-size: 18px;
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 27px;
-  text-align: center;
+  line-height: 1.5;
   margin-left: 6px;
   text-decoration: underline;
 }
-/* Media query for responsiveness */
-/* @media (max-width: 768px) {
-  .hero-text {
-    max-width: 90%;
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem; /* Smaller font size on small screens */
   }
+
+  .hero-text h3 {
+    font-size: 1.25rem; /* Smaller font size on small screens */
+  }
+
   .hero-inputs {
-    flex-direction: column;
-    align-items: center;
-  }
-  .hero-inputs input {
+    flex-direction: column; /* Display inputs in a column on small screens */
     width: 100%;
-    margin-bottom: 10px;
   }
-} */
+
+  .hero-inputs input,
+  .hero-inputs button {
+    width: 90%;
+    margin: 5px 0; /* Adjust spacing between inputs */
+  }
+
+  .hero-footer {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
