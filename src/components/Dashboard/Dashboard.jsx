@@ -15,7 +15,7 @@ function Dashboard() {
           first step towards realizing your entrepreneurial dreams.
         </p>
         <button className="dash-button" style={{ position: "relative" }}>
-          Sign up Today !
+          Sign up Today!
           <IoMdArrowForward
             style={{
               position: "absolute",

@@ -1,62 +1,78 @@
 .dash-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
 }
-.dash-left{
-    padding-left: 70px;
-    padding-top: 70px;
+
+.dash-left {
+  flex: 1;
+  padding: 20px;
+  min-width: 300px;
+  box-sizing: border-box;
 }
+
 .dash-left h1 {
-  font-family: Poppins;
-  font-size: 37.34px;
+  font-family: Poppins, sans-serif;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 2.5rem;
   text-align: left;
 }
+
 .dash-left p {
-  font-family: Poppins;
-  font-size: 17.16px;
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
   font-weight: 300;
-  line-height: 28px;
+  line-height: 1.75rem;
   text-align: left;
-  width: 600px;
-  height: 120px;
-  top: 783px;
-  left: 106px;
-  gap: 0px;
-  opacity: 0px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
+
 .dash-button {
-  font-family: Poppins;
-  font-size: 18px;
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.5rem;
   text-align: center;
   background-color: #00732f;
   color: white;
-  width: 317px;
+  width: 100%;
+  max-width: 317px;
   height: 54px;
-  /* padding: 0px 70.44px 0px 43px; */
-  gap: 0px;
-  border-radius: 5px 5px 5px 5px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
+  border-radius: 5px;
+  border: none;
   margin-top: 30px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  
-}
-.dash-right {
-  padding-right: 70px;
-  padding-top: 120px;
-  width: 570px;
-  height: 244px;
-  display: flex;
-  justify-content: center; /* Center align buttons horizontally */
-  align-items: center; /* Center align buttons vertically */
-  flex-direction: column; /* Display buttons in a column */
-  
+  position: relative;
 }
 
+.dash-right {
+  flex: 1;
+  padding: 20px;
+  min-width: 300px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .dash-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dash-left, .dash-right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .dash-button {
+    width: 100%;
+    max-width: none;
+  }
+}

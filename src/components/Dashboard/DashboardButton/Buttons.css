@@ -1,19 +1,33 @@
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
 .btn-primary {
-    width: 230px;
-    height: 65px;
-    padding: 17px 17px;
-    border: 1px solid #E7760D;
-    border-radius: 5px 5px 5px 5px;
-    color: black;
-    background-color: white; /* Add your desired text color */
-    font-family: Inter;
-    font-size: 18.75px;
-    font-weight: 500;
-    line-height: 32px;
-    text-align: center;
-    margin: 10px; /* Add margin for spacing between buttons */
+  width: 230px;
+  height: 65px;
+  padding: 17px;
+  border: 1px solid #e7760d;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 18.75px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-primary {
+    width: 100%;
   }
-  
-  .btn-primary:hover {
-    opacity: 1; /* Show button on hover */
-  }
+}
