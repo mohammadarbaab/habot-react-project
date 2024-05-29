@@ -1,0 +1,2173 @@
+
+              Menu
+ 
+import React, { useState } from "react";
+import {
+  Box,
+  Flex,
+  Button,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  Image,
+} from "@chakra-ui/react";
+import { HamburgerIcon } from "@chakra-ui/icons";
+import { Link } from "react-router-dom"; // Make sure to import Link from react-router-dom for navigation
+
+function Navigation() {
+  const [isLogin, setIsLogin] = useState(true);
+
+  const handleClick = () => {
+    console.log("ok");
+    // Add your navigation logic here
+    // Example:
+    // if (isLogin) {
+    //   history.push('/login');
+    // } else {
+    //   history.push('/signup');
+    // }
+  };
+
+  return (
+    <Box bg="gray.100">
+      <Flex
+        alignItems="center"
+        justifyContent="space-between"
+        px={8}
+        py={4}
+        maxW="full"
+        mx="auto"
+      >
+        <Link to="/">
+          <Image src="/images/habot-logo.png" boxSize="80px" mr={3} alt="Logo" />
+        </Link>
+        <Box display={{ base: "block", md: "none" }}>
+          <Menu>
+            <MenuButton
+              as={Button}
+              rightIcon={<HamburgerIcon />}
+              variant="outline"
+            >
+            </MenuButton>
+            <MenuList>
+              <MenuItem>
+                <Link to="#">Find Suppliers</Link>
+              </MenuItem>
+              <MenuItem>
+                <Menu>
+                  <MenuButton as={Button}>Find Services Tag</MenuButton>
+                  <MenuList>
+                    <MenuItem>
+                      <Link to="#">Action</Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link to="#">Another action</Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link to="#">Something else here</Link>
+                    </MenuItem>
+                  </MenuList>
+                </Menu>
+              </MenuItem>
+            </MenuList>
+          </Menu>
+        </Box>
+        <Box display={{ base: "none", md: "block" }}>
+          <Flex alignItems="center">
+            <Link to="#">
+              <Button variant="ghost" mr={4}>
+                Find Suppliers
+              </Button>
+            </Link>
+            <Menu>
+              <MenuButton as={Button} variant="ghost">
+                Find Services Tag
+              </MenuButton>
+              <MenuList>
+                <MenuItem>
+                  <Link to="#">Action</Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to="#">Another action</Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to="#">Something else here</Link>
+                </MenuItem>
+              </MenuList>
+            </Menu>
+            <Button colorScheme="primary" ml={4} onClick={handleClick}>
+              Your Button
+            </Button>
+          </Flex>
+        </Box>
+      </Flex>
+    </Box>
+  );
+}
+
+export default Navigation;
+
+ 
+
+              Menu
+ 
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "../Components/navbar.css";
+import { useState } from "react";
+
+function Navigation() {
+  const [isLogin, setIsLogin] = useState(true);
+
+  const handleClick = () => {
+    console.log("ok");
+    // if (isLogin) {
+    //   // history.push('/login');
+    // } else {
+    //   history.push('/signup');
+    // }
+  };
+  return (
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
+        <img
+          src="/images/habot-logo.png"
+          width="80px"
+          class="mr-3"
+          alt="Logo"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                Find Suppliers <span class="sr-only"></span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Find Services Tag
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">
+                  Action
+                </a>
+                <a class="dropdown-item" href="#">
+                  Another action
+                </a>
+                <a class="dropdown-item" href="#">
+                  Something else here
+                </a>
+              </div>
+              <button className="btn btn-primary" onClick={handleClick}>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  );
+}
+
+export default Navigation;
+
+ 
+
+                <>Login</>
+ 
+{isLogin ? "Login" : "Signup"}
+ 
+
+  // const history = useHistory();
+ 
+
+      // history.push('/signup');
+ 
+
+import useHistory from
+ 
+
+      <div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Login / Signup
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="/login">Login</a>
+    <a class="dropdown-item" href="/signup">Signup</a>
+  </div>
+</div>
+ 
+
+  </div>
+ 
+
+  <div class="dropdown-menu">
+ 
+<li class="nav-item">
+            <a class="nav-link" href="#">
+              Pricing
+            </a>
+          </li>
+ 
+Dropdown link
+ 
+ <li class="nav-item">
+            <a class="nav-link" href="#">
+              
+            </a>
+          </li>
+ 
+Features
+ 
+Home
+ 
+(current)
+ 
+
+    height: 8vh; /* Reduced height */
+ 
+.custom-navbar {
+    padding-top: 0.25rem; /* Reduced top padding */
+    padding-bottom: 0.25rem; /* Reduced bottom padding */
+    height: 8vh; /* Reduced height */
+    padding-left: 60px;
+    padding-right: 30px;
+  }
+  
+  .custom-navbar img {
+    height: 60px; /* Adjusted logo height */
+  }
+  
+  .navbar-nav .nav-link {
+    padding-top: 0.1rem; /* Reduced top padding for nav links */
+    padding-bottom: 0.1rem; /* Reduced bottom padding for nav links */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .custom-navbar {
+      padding-top: 0.25rem; /* Reduced top padding */
+      padding-bottom: 0.25rem; /* Reduced bottom padding */
+      height: auto; /* Auto adjust height for smaller screens */
+    }
+  
+    .custom-navbar img {
+      height: 50px; /* Smaller logo for smaller screens */
+    }
+  
+    .navbar-nav {
+      flex-direction: column; /* Stack nav links vertically */
+      align-items: center; /* Center nav links horizontally */
+    }
+  
+    .navbar-nav .nav-link {
+      padding-top: 0.5rem; /* Increased padding for touch targets */
+      padding-bottom: 0.5rem; 
+    }
+  }
+  
+  /* Media query for very small screens */
+  @media (max-width: 576px) {
+    .custom-navbar {
+      padding-top: 0.25rem; /* Reduced top padding */
+      padding-bottom: 0.25rem; /* Reduced bottom padding */
+      height: auto; /* Auto adjust height for very small screens */
+    }
+  
+    .custom-navbar img {
+      height: 40px; /* Smaller logo for very small screens */
+      margin-bottom: 0.5rem; /* Space between logo and nav links */
+    }
+  
+    .navbar-nav {
+      flex-direction: column; /* Stack nav links vertically */
+      align-items: center; /* Center nav links horizontally */
+    }
+  
+    .navbar-nav .nav-link {
+      padding-top: 0.75rem; /* Increased padding for touch targets */
+      padding-bottom: 0.75rem; 
+    }
+  }
+  
+ 
+ <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="/images/habot-logo.png" width="80px"></img>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+    </div>
+ 
+D:\07.Git\30.Habot project\habot-react-project
+ 
+
+  <a class="navbar-brand" href="#">Navbar</a>
+ 
+
+      <nav className="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
+        <img src="/images/habot-logo.png" width="100px"  className="mr-3" alt="Logo" />
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item active">
+              <a className="nav-link" href="#">
+                Home <span className="sr-only">(current)</span>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Features
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Pricing
+              </a>
+            </li>
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <div
+                className="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a className="dropdown-item" href="#">
+                  Action
+                </a>
+                <a className="dropdown-item" href="#">
+                  Another action
+                </a>
+                <a className="dropdown-item" href="#">
+                  Something else here
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+ 
+.custom-navbar {
+    padding-top: 0.5rem; /* Top padding ki value ko adjust karein */
+    padding-bottom: 0.5rem; /* Bottom padding ki value ko adjust karein */
+    height: 10vh; /* Navbar ki height ko set karein */
+  }
+  
+  .custom-navbar img {
+    height: 80px; /* Logo ki height ko set karein */
+  }
+  
+  .navbar-nav .nav-link {
+    padding-top: 0.25rem; /* Nav links ka top padding adjust karein */
+    padding-bottom: 0.25rem; /* Nav links ka bottom padding adjust karein */
+  }
+  
+  /* Chhote screens ke liye media query */
+  @media (max-width: 768px) {
+    .custom-navbar {
+      padding-top: 0.5rem; /* Top padding ki value ko adjust karein */
+      padding-bottom: 0.5rem; /* Bottom padding ki value ko adjust karein */
+      height: auto; /* Chhote screens ke liye height ko automatic adjust hone de */
+    }
+  
+    .custom-navbar img {
+      height: 60px; /* Chhote screens ke liye chhota logo */
+    }
+  
+    .navbar-nav .nav-link {
+      padding-top: 0.5rem; /* Touch targets ke liye padding ko badaayein */
+      padding-bottom: 0.5rem; 
+    }
+  }
+  
+  /* Bahut hi chhote screens ke liye media query */
+  @media (max-width: 576px) {
+    .custom-navbar {
+      padding-top: 0.25rem; /* Top padding ki value ko adjust karein */
+      padding-bottom: 0.25rem; /* Bottom padding ki value ko adjust karein */
+      height: auto; /* Bahut hi chhote screens ke liye height ko automatic adjust hone de */
+    }
+  
+    .custom-navbar img {
+      height: 80px; /* Bahut hi chhote screens ke liye chhota logo */
+    }
+  
+    .navbar-nav .nav-link {
+      padding-top: 0.75rem; /* Touch targets ke liye padding ko badaayein */
+      padding-bottom: 0.75rem; 
+    }
+  }
+  
+ 
+.custom-navbar {
+    padding-top: 0.5rem; /* Adjust this value to change the top padding */
+    padding-bottom: 0.5rem; 
+    height: 10vh;
+  }
+  
+  .custom-navbar img {
+    height: 80px; /* Adjust this value to change the height of the logo */
+  }
+  
+  .navbar-nav .nav-link {
+    padding-top: 0.25rem; /* Adjust this value to change the top padding of nav links */
+    padding-bottom: 0.25rem; /* Adjust this value to change the bottom padding of nav links */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .custom-navbar {
+      padding-top: 0.5rem; /* Adjust this value to change the top padding */
+      padding-bottom: 0.5rem; 
+      height: auto; /* Let the height adjust automatically for smaller screens */
+    }
+  
+    .custom-navbar img {
+      height: 60px; /* Smaller logo for smaller screens */
+    }
+  
+    .navbar-nav .nav-link {
+      padding-top: 0.5rem; /* Increase padding for better touch targets */
+      padding-bottom: 0.5rem; 
+    }
+  }
+  
+  /* Media query for very small screens */
+  @media (max-width: 576px) {
+    .custom-navbar {
+      padding-top: 0.25rem; /* Adjust this value to change the top padding */
+      padding-bottom: 0.25rem; 
+      height: auto; /* Let the height adjust automatically for very small screens */
+    }
+  
+    .custom-navbar img {
+      height: 80px; /* Smaller logo for very small screens */
+    }
+  
+    .navbar-nav .nav-link {
+      padding-top: 0.75rem; /* Increase padding for better touch targets */
+      padding-bottom: 0.75rem; 
+    }
+  }
+  
+ 
+.custom-navbar {
+    padding-top: 0.5rem; /* Adjust this value to change the top padding */
+    padding-bottom: 0.5rem; 
+    height: 10vh;
+  }
+  
+  .custom-navbar img {
+    height: 100px; /* Adjust this value to change the height of the logo */
+  }
+  
+  .navbar-nav .nav-link {
+    padding-top: 0.25rem; /* Adjust this value to change the top padding of nav links */
+    padding-bottom: 0.25rem; /* Adjust this value to change the bottom padding of nav links */
+  }
+  
+ 
+
+      justify-content: center;
+ 
+.custom-navbar {
+    padding-top: 0.5rem; /* Adjust this value to change the top padding */
+    padding-bottom: 0.5rem; 
+    height: 10vh;
+  }
+  
+  .custom-navbar img {
+    height: 80px; /* Adjust this value to change the height of the logo */
+  }
+  
+  .navbar-nav .nav-link {
+    padding-top: 0.25rem; /* Adjust this value to change the top padding of nav links */
+    padding-bottom: 0.25rem; /* Adjust this value to change the bottom padding of nav links */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .custom-navbar {
+      padding-top: 0.5rem; /* Adjust this value to change the top padding */
+      padding-bottom: 0.5rem; 
+      height: auto; /* Let the height adjust automatically for smaller screens */
+    }
+  
+    .custom-navbar img {
+      height: 100px; /* Smaller logo for smaller screens */
+    }
+  
+    .navbar-nav .nav-link {
+      padding-top: 0.5rem; /* Increase padding for better touch targets */
+      padding-bottom: 0.5rem; 
+    }
+  }
+  
+  /* Media query for very small screens */
+  @media (max-width: 576px) {
+    .custom-navbar {
+      padding-top: 0.25rem; /* Adjust this value to change the top padding */
+      padding-bottom: 0.25rem; 
+      height: 10vh;/* /* Let the height adjust automatically for very small screens */
+    }
+  
+    .custom-navbar img {
+      height: 100px; /* Smaller logo for very small screens */
+    }
+  
+    .navbar-nav .nav-link {
+      padding-top: 0.75rem; /* Increase padding for better touch targets */
+      padding-bottom: 0.75rem; 
+    }
+  }
+  
+ 
+
+    align-items: center;
+ 
+
+      display: flex;
+ 
+
+    justify-content: center; 
+ 
+
+      line-height: normal;
+ 
+
+      justify-items: center; 
+ 
+
+      align-items: center;
+ 
+.custom-navbar {
+    padding-top: 0.5rem; /* Adjust this value to change the top padding */
+    padding-bottom: 0.5rem; 
+    height: 10vh;
+  }
+  
+  .custom-navbar img {
+    height: 100px; /* Adjust this value to change the height of the logo */
+  }
+  
+  .navbar-nav .nav-link {
+    padding-top: 0.25rem; /* Adjust this value to change the top padding of nav links */
+    padding-bottom: 0.25rem; /* Adjust this value to change the bottom padding of nav links */
+  }
+  
+ 
+
+    ju
+ 
+
+    align-items: center;
+ 
+
+    justify-content: center;
+ 
+
+    justify-items: center;/* Adjust this value to change the bottom padding */
+ 
+height="100px"
+ 
+eight="12vh"
+ 
+/* Add this CSS to create space between the image and the nav links */
+.custom-navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 50px;
+    padding-right: 30px;
+    height: 10vh;
+    align-content: center;
+  }
+  
+  .custom-navbar img {
+    margin-right: 20px;
+  }
+  
+  /* Align the nav items to the right */
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+ 
+
+    color: "black";
+ 
+import React from "react";
+import { Link } from "react-router-dom";
+
+function Navbar() {
+  return (
+    <>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <Link className="navbar-brand" to="/">
+            <b>Live News App</b>
+          </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+              <div className="d-flex align-items-center">
+                {" "}
+                {/* Added container for alignment */}
+                <li className="nav-item">
+                  <Link className="nav-link" to="/login">
+                    Login
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/signup">
+                    Signup
+                  </Link>
+                </li>
+              </div>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/general">
+                  General
+                </Link>
+              </li>
+              {/* Add other navigation links */}
+              <li className="nav-item">
+                <Link className="nav-link" to="/apple">
+                  Apple
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/entertainment">
+                  Entertainment
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/health">
+                  Health
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/science">
+                  Science
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/technology">
+                  Technology
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/sports">
+                  Sports
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </>
+  );
+}
+
+export default Navbar;
+
+ 
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ 
+ {currentUser && (
+                <>
+                  {/* Navigation Links */}
+                  
+                  {/* Add a container for the welcome message and logout button */}
+                  <div className="d-flex align-items-center">
+                    {" "}
+                    {/* Added container for alignment */}
+                    <li className="nav-item">
+                      <span style={{ lineHeight: "1", marginRight: "10px" }}>
+                        <b>{currentUser.displayName}</b>
+                      </span>
+                    </li>
+                    <li className="nav-item">
+                      <button
+                        onClick={handleLogout}
+                        className="btn btn-link"
+                        style={{
+                        borderRadius: "5px",
+                        color: "",
+                        background: "lightblue",
+                        fontFamily: "sans-serif",
+                        color:"black"
+                      }}
+                      >
+                        Logout
+                      </button>
+                    </li>
+                  </div>
+                </>
+              )}
+ 
+
+              {/* Conditional rendering based on authentication status */}
+              {!currentUser && (
+                
+              )}
+ 
+
+  const { currentUser } = useAuth();
+
+  const handleLogout = async () => {
+    try {
+      await auth.signOut();
+    } catch (error) {
+      console.error("Error logging out: ", error);
+    }
+  };
+ 
+
+import { useAuth } from "../Context/AuthContext";
+import { auth } from "../firebase";
+ 
+import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import '../Components/navbar.css';
+
+
+function Navigation() {
+  return (
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
+        <img src="/images/habot-logo.png" width="80px" className="mr-3" alt="Logo" />
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item active">
+              <a className="nav-link" href="#">
+                Home <span className="sr-only">(current)</span>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Features
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Pricing
+              </a>
+            </li>
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <div
+                className="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a className="dropdown-item" href="#">
+                  Action
+                </a>
+                <a className="dropdown-item" href="#">
+                  Another action
+                </a>
+                <a className="dropdown-item" href="#">
+                  Something else here
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  );
+}
+
+export default Navigation;
+
+ 
+
+    align-items: center;
+ 
+
+    line-height: 5vh;
+ 
+
+    height: 10vh;
+ 
+<div>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
+        <img src="/images/habot-logo.png" width="80px" className="mr-3" alt="Logo" />
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item active">
+              <a className="nav-link" href="#">
+                Home <span className="sr-only">(current)</span>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Features
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Pricing
+              </a>
+            </li>
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <div
+                className="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a className="dropdown-item" href="#">
+                  Action
+                </a>
+                <a className="dropdown-item" href="#">
+                  Another action
+                </a>
+                <a className="dropdown-item" href="#">
+                  Something else here
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+ 
+import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+
+function Navigation() {
+  return (
+    <div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
+    <img src="/images/habot-logo.png" width="80px" class="mr-3"></img>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">
+            Home <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Features
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Pricing
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Dropdown link
+          </a>
+          <div
+            class="dropdown-menu"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <a class="dropdown-item" href="#">
+              Action
+            </a>
+            <a class="dropdown-item" href="#">
+              Another action
+            </a>
+            <a class="dropdown-item" href="#">
+              Something else here
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+  
+  );
+}
+
+export default Navigation;
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<!-- Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXlG8o1/PPiZZf1NH9s7vGrM3Jsnj1Z9phdb45ZBfDIvLpfyvy8HfDxaycUm" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgFQ4A1RF7gf6XBtjvvUQzjK7uHfj1X5BJvH48NSHVge+iRxD/Y" crossorigin="anonymous"></script>
+
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+
+ 
+
+    <div>
+ 
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="/images/habot-logo.png" width="80px" class="mr-3"></img>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              Home <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Features
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Pricing
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+ 
+import React from "react";
+
+function Navigation() {
+  return (
+    <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="/images/habot-logo.png" width="80px" class="mr-3"></img>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              Home <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Features
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Pricing
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+  );
+}
+
+export default Navigation;
+
+ 
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+ 
+<li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown link
+            </a>
+            <div
+              class="dropdown-menu"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <a class="dropdown-item" href="#">
+                Action
+              </a>
+              <a class="dropdown-item" href="#">
+                Another action
+              </a>
+              <a class="dropdown-item" href="#">
+                Something else here
+              </a>
+            </div>
+          </li>
+ 
+ <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="/images/habot-logo.png" width="80px"></img>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                Home <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Features
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Pricing
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">
+                  Action
+                </a>
+                <a class="dropdown-item" href="#">
+                  Another action
+                </a>
+                <a class="dropdown-item" href="#">
+                  Something else here
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+ 
+D:\07.Git\30.Habot project\habot-react-project
+ 
+/public/images/hobat-logo.png
+ 
+<a class="navbar-brand" href="#">
+          Navbar
+        </a>
+ 
+import React, { useState } from "react";
+import {
+  Flex,
+  Box,
+  Text,
+  Link,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  VStack,
+} from "@chakra-ui/react";
+import { IoIosArrowDown } from "react-icons/io";
+import { FaBars } from "react-icons/fa";
+import { IconButton } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
+import { useBreakpointValue } from "@chakra-ui/react";
+
+const Navbar = () => {
+  const isMobile = useBreakpointValue({ base: true, md: false });
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <Flex
+  as="nav"
+  h={{ base: "auto", md: "75px" }} // Adjusting height for small screens
+  bg="gray"
+  justify="space-between"
+  align="center"
+  px={{ base: 2, md: 4 }} // Adjusting padding for small screens
+  direction={{ base: "column", md: "row" }} // Direction changes based on screen size
+>
+  {/* Logo and Heading */}
+  <Box display="flex" alignItems="center" justifyContent="space-between" ml={{ base: 0, md: 3 }}>
+  {isMobile && (
+    <IconButton
+      icon={<FaBars />}
+      fontSize="2xl"
+      variant="ghost"
+      aria-label="Menu"
+      ml={{ base: 0, md: 3 }} // Adjusting margin for small screens
+    />
+  )}
+  <Box flex="1" textAlign="right" mr={{ base: 0, md: 3 }}> {/* Adjusting textAlign and margin for small screens */}
+    <img src="\images\habot-logo.png" alt="Logo" style={{ height: "120px" }} />
+  </Box>
+</Box>
+
+
+
+
+
+  {/* Navigation Links */}
+  {!isMobile && (
+    <Box display="flex" alignItems="center" gap={{ base: 3, md: 15 }}>
+      <Link href="#home" mx={2}>
+        Find Suppliers
+      </Link>
+      <Box display="inline-block" position="relative">
+        <Box display="inline-block" position="relative">
+          <Menu autoSelect={false}>
+            <Box display="flex" alignItems="center">
+              <Text>Find Services Tags</Text>
+              <MenuButton onClick={toggleMenu} _hover={{ bg: "none" }}>
+                <Box as={IoIosArrowDown} ml="2" />
+              </MenuButton>
+            </Box>
+
+            <MenuList>
+              <MenuItem onClick={toggleMenu}>Option 1</MenuItem>
+              <MenuItem onClick={toggleMenu}>Option 2</MenuItem>
+              <MenuItem onClick={toggleMenu}>Option 3</MenuItem>
+            </MenuList>
+          </Menu>
+        </Box>
+      </Box>
+
+      <Button
+        as="div"
+        ml={{ base: 0, md: 4 }}
+        mt={{ base: 4, md: 0 }} // Adjusting margin top for small screens
+        color="green"                   // Text color
+        bg="white"                      // Background color
+        border="1px solid green"       // Border
+        pr={4}                          // Right padding
+        sx={{                          // Additional styles
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'flex-end',
+          '&:hover': {                 // Styles for hover state
+            color: 'white',            // Change text color to white on hover
+          },
+        }}
+      >
+        <Link href="#login" mx={1}>
+          Login
+        </Link>
+        /
+        <Link href="#signup" mx={1}>
+          Signup
+        </Link>
+      </Button>
+    </Box>
+  )}
+</Flex>
+
+  );
+};
+
+export default Navbar;
+
+ 
+<Box display="flex" alignItems="center" justifyContent="space-between" ml={{ base: 0, md: 3 }}>
+  {isMobile && (
+    <IconButton
+      icon={<FaBars />}
+      fontSize="2xl"
+      variant="ghost"
+      aria-label="Menu"
+      mr={2} // Add margin to the right for spacing
+    />
+  )}
+  <Box flex="1" ml={{ base: 'auto', md: 0 }} mr={{ base: 2, md: 0 }}> {/* Add margin to the right for the logo image */}
+    <img src="\images\habot-logo.png" alt="Logo" style={{ height: "120px" }} />
+  </Box>
+</Box>
+ 
+<Box display="flex" alignItems="center" justifyContent="space-between" ml={{ base: 0, md: 3 }}>
+  {isMobile && (
+    <IconButton
+      icon={<FaBars />}
+      fontSize="2xl"
+      variant="ghost"
+      aria-label="Menu"
+      
+    />
+  )}
+  <Box flex="1"  ml={{ base: 'auto', md: 0 }}> {/* Adjusting the textAlign and flex properties */}
+    <img src="\images\habot-logo.png" alt="Logo" style={{ height: "120px" }} />
+  </Box>
+</Box>
+ 
+
+  </VStack>
+ 
+
+  <VStack justifyContent="space-between">
+ 
+alignItems="center"
+ 
+textAlign="right"
+ 
+ <Box display="flex" alignItems="center" ml={{ base: 0, md: 3 }}>
+  {isMobile && (
+    <IconButton
+      icon={<FaBars />}
+      fontSize="2xl"
+      variant="ghost"
+      aria-label="Menu"
+      mr={2} // Add margin to the right for spacing
+    />
+  )}
+  <Box flex="1" textAlign="right"> {/* Adjusting the textAlign and flex properties */}
+    <img src="\images\habot-logo.png" alt="Logo" style={{ height: "120px" }} />
+  </Box>
+</Box>
+ 
+
+  <Box display="flex" alignItems="center" justifyContent="space-between" ml={{ base: 0, md: 3 }}>
+  {isMobile && (
+    <IconButton
+      icon={<FaBars />}
+      fontSize="2xl"
+      variant="ghost"
+      aria-label="Menu"
+    />
+  )}
+  <Box ml="auto">
+    <img src="\images\habot-logo.png" alt="Logo" style={{ height: "120px" }} />
+  </Box>
+</Box>
+ 
+ <Box display="flex" alignItems="center" ml={{ base: 0, md: 3 }} >
+    {isMobile && (
+      <IconButton
+        icon={<FaBars />}
+        fontSize="2xl"
+        variant="ghost"
+        aria-label="Menu"
+      />
+    )}
+    <Box >
+      <img src="\images\habot-logo.png" alt="Logo" style={{ height: "120px" }} />
+    </Box>
+  </Box>
+
+ 
+justifyContent="space-between"
+ 
+alignItems="center"
+ 
+<Flex
+      as="nav"
+      h="75px"
+      bg="brand.100"
+      justify="space-between"
+      align="center"
+      px={4}
+    >
+      {/* Logo and Heading */}
+      <Box display="flex" alignItems="center">
+        {isMobile && (
+          <IconButton
+            icon={<FaBars />}
+            fontSize="2xl"
+            variant="ghost"
+            aria-label="Menu"
+          />
+        )}
+        <Box ml={3}>
+          <img src="\images\habot-logo.png" alt="Logo" style={{ height: "0px" }} />
+        </Box>
+      </Box>
+
+      {/* Navigation Links */}
+      {!isMobile && (
+        <Box display="flex" alignItems="center" gap="15px">
+          <Link href="#home" mx={2}>
+            Find Suppliers
+          </Link>
+          <Box display="inline-block" position="relative">
+            <Box display="inline-block" position="relative">
+              <Menu autoSelect={false}>
+                <Box display="flex" alignItems="center">
+                  <Text>Find Services Tags</Text>
+                  <MenuButton onClick={toggleMenu} _hover={{ bg: "none" }}>
+                    <Box as={IoIosArrowDown} ml="2" />
+                  </MenuButton>
+                </Box>
+
+                <MenuList>
+                  <MenuItem onClick={toggleMenu}>Option 1</MenuItem>
+                  <MenuItem onClick={toggleMenu}>Option 2</MenuItem>
+                  <MenuItem onClick={toggleMenu}>Option 3</MenuItem>
+                </MenuList>
+              </Menu>
+            </Box>
+          </Box>
+
+          <Button
+  as="div"
+  ml={4}
+  color="green"                   // Text color
+  bg="white"                      // Background color
+  border="1px solid green"       // Border
+  pr={4}                          // Right padding
+  sx={{                          // Additional styles
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    '&:hover': {                 // Styles for hover state
+      color: 'white',            // Change text color to white on hover
+    },
+  }}
+>
+  <Link href="#login" mx={1}>
+    Login
+  </Link>
+  /
+  <Link href="#signup" mx={1}>
+    Signup
+  </Link>
+</Button>
+
+
+        </Box>
+      )}
+    </Flex>
+ 
+ <Flex
+      as="nav"
+      h="75px"
+      bg="gray"
+      justify="space-between"
+      align="center"
+      px={4}
+    >
+      {/* Logo and Heading */}
+      <Box display="flex" alignItems="center">
+        {isMobile && (
+          <IconButton
+            icon={<FaBars />}
+            fontSize="2xl"
+            variant="ghost"
+            aria-label="Menu"
+          />
+        )}
+        <Box ml={3}>
+          <img src="\images\habot-logo.png" alt="Logo" style={{ height: "120px" }} />
+        </Box>
+      </Box>
+
+      {/* Navigation Links */}
+      {!isMobile && (
+        <Box display="flex" alignItems="center" gap="15px">
+          <Link href="#home" mx={2}>
+            Find Suppliers
+          </Link>
+          <Box display="inline-block" position="relative">
+            <Box display="inline-block" position="relative">
+              <Menu autoSelect={false}>
+                <Box display="flex" alignItems="center">
+                  <Text>Find Services Tags</Text>
+                  <MenuButton onClick={toggleMenu} _hover={{ bg: "none" }}>
+                    <Box as={IoIosArrowDown} ml="2" />
+                  </MenuButton>
+                </Box>
+
+                <MenuList>
+                  <MenuItem onClick={toggleMenu}>Option 1</MenuItem>
+                  <MenuItem onClick={toggleMenu}>Option 2</MenuItem>
+                  <MenuItem onClick={toggleMenu}>Option 3</MenuItem>
+                </MenuList>
+              </Menu>
+            </Box>
+          </Box>
+
+          <Button
+  as="div"
+  ml={4}
+  color="green"                   // Text color
+  bg="white"                      // Background color
+  border="1px solid green"       // Border
+  pr={4}                          // Right padding
+  sx={{                          // Additional styles
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    '&:hover': {                 // Styles for hover state
+      color: 'white',            // Change text color to white on hover
+    },
+  }}
+>
+  <Link href="#login" mx={1}>
+    Login
+  </Link>
+  /
+  <Link href="#signup" mx={1}>
+    Signup
+  </Link>
+</Button>
+
+
+        </Box>
+      )}
+    </Flex>
+ 
+ <Flex
+      as="nav"
+      h="75px"
+      bg="gray"
+      justify="space-between"
+      align="center"
+      px={4}
+    >
+      {/* Logo and Heading */}
+      <Box display="flex" alignItems="center">
+        {isMobile && (
+          <IconButton
+            icon={<FaBars />}
+            fontSize="2xl"
+            variant="ghost"
+            aria-label="Menu"
+          />
+        )}
+        <Box ml={3}>
+          <img src="\images\habot-logo.png" alt="Logo" style={{ height: "120px" }} />
+        </Box>
+      </Box>
+
+      {/* Navigation Links */}
+      {!isMobile && (
+        <Box display="flex" alignItems="center" gap="15px">
+          <Link href="#home" mx={2}>
+            Find Suppliers
+          </Link>
+          <Box display="inline-block" position="relative">
+            <Box display="inline-block" position="relative">
+              <Menu autoSelect={false}>
+                <Box display="flex" alignItems="center">
+                  <Text>Find Services Tags</Text>
+                  <MenuButton onClick={toggleMenu} _hover={{ bg: "none" }}>
+                    <Box as={IoIosArrowDown} ml="2" />
+                  </MenuButton>
+                </Box>
+
+                <MenuList>
+                  <MenuItem onClick={toggleMenu}>Option 1</MenuItem>
+                  <MenuItem onClick={toggleMenu}>Option 2</MenuItem>
+                  <MenuItem onClick={toggleMenu}>Option 3</MenuItem>
+                </MenuList>
+              </Menu>
+            </Box>
+          </Box>
+
+          <Button
+  as="div"
+  ml={4}
+  color="green"                   // Text color
+  bg="white"                      // Background color
+  border="1px solid green"       // Border
+  pr={4}                          // Right padding
+  sx={{                          // Additional styles
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    '&:hover': {                 // Styles for hover state
+      color: 'white',            // Change text color to white on hover
+    },
+  }}
+>
+  <Link href="#login" mx={1}>
+    Login
+  </Link>
+  /
+  <Link href="#signup" mx={1}>
+    Signup
+  </Link>
+</Button>
+
+
+        </Box>
+      )}
+    </Flex>
+ 
+brand.100
+ 
+D:\07.Git\30.Habot project\habot-react-project
+ 
+./logo.png
+ 
+
+        <Text fontSize="xl" fontWeight="bold" ml={3}>
+          Your Heading
+        </Text>
+ 
+<Button
+  as="div"
+  ml={4}
+  color="green"      // Text color
+  bg="white"         // Background color
+  border="1px solid green"  // Border
+  pr={4}             // Right padding
+  sx={{              // Additional styles
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+  }}
+>
+  <Link href="#login" mx={1}>
+    Login
+  </Link>
+  /
+  <Link href="#signup" mx={1}>
+    Signup
+  </Link>
+</Button>
+ 
+ <Button as="div" ml={4} color="black" bg="white">
+            <Link href="#login" mx={1}>
+              Login
+            </Link>
+            /
+            <Link href="#signup" mx={1}>
+              Signup
+            </Link>
+          </Button>
+ 
+Options
+ 
+
+          (
+ 
+<Menu autoSelect={false}>
+        <MenuButton onClick={toggleMenu} _hover={{ bg: "none" }}>
+            Options <IoIosArrowDown />
+        </MenuButton>
+        <MenuList>
+          <MenuItem onClick={toggleMenu}>Option 1</MenuItem>
+          <MenuItem onClick={toggleMenu}>Option 2</MenuItem>
+          <MenuItem onClick={toggleMenu}>Option 3</MenuItem>
+        </MenuList>
+      </Menu>
+ 
+
+      </Flex>
+ 
+
+      <Flex alignItems="center">
+ 
+
+          </div>
+ 
+
+          <div>
+ 
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+ 
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+ 
+
+          <Flex alignItems="center">
+            <Flex alignItems="center">
+                Find Service Tags
+              <IoIosArrowDown />
+            </Flex>
+          </Flex>
+ 
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+ 
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+ 
+
+import toggle
+ 
+
+          <Flex alignItems="center">
+            <Flex alignItems="center">
+                Find Service Tags
+              <IoIosArrowDown />
+            </Flex>
+          </Flex>
+ 
+
+              </Link>
+ 
+
+              <Link href="#services" mx={2}>
+ 
+
+      <Menu>
+        <MenuButton
+          rightIcon={<IoIosArrowDown />}
+          onClick={handleMenuToggle}
+          as="button"
+          textAlign="center"
+          bg="transparent"
+          border="none"
+        >
+          Find Service Tags
+        </MenuButton>
+        <MenuList isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)}>
+          <MenuItem>Option 1</MenuItem>
+          <MenuItem>Option 2</MenuItem>
+          <MenuItem>Option 3</MenuItem>
+        </MenuList>
+      </Menu>
+ 
+      <Menu>
+        <MenuButton
+          rightIcon={<IoIosArrowDown />}
+          onClick={handleMenuToggle}
+          as="button"
+          textAlign="center"
+          bg="transparent"
+          border="none"
+        >
+          Find Service Tags
+        </MenuButton>
+        <MenuList isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)}>
+          <MenuItem>Option 1</MenuItem>
+          <MenuItem>Option 2</MenuItem>
+          <MenuItem
+ 
+<Flex alignItems="center">
+          <Menu >
+            <MenuButton
+              rightIcon={<IoIosArrowDown />}
+            >
+              Find Service Tags
+              <IoIosArrowDown />
+            </MenuButton>
+            <MenuList isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)}>
+              <MenuItem>Option 1</MenuItem>
+              <MenuItem>Option 2</MenuItem>
+              <MenuItem>Option 3</MenuItem>
+            </MenuList>
+          </Menu>
+          </Flex>
+ 
+Button
+ 
+
+              onClick={handleMenuToggle}
+ 
+
+              rightIcon={<IoIosArrowDown />}
+ 
+
+              as={Button}
+ 
+
+              as={Button}
+ 
+
+          {/* <Flex alignItems="center">
+              Find Service Tags
+            
+          </Flex> */}
+ 
+
+            <Link href="#services" mx={2}>
+ 
+
+            </Link>
+ 
+
+          <Menu>
+  <MenuButton
+    as={Link}
+    onClick={handleMenuToggle}
+    rightIcon={<IoIosArrowDown style={{ marginRight: '4px' }} />}
+    display="flex"
+    alignItems="center"
+  >
+    Find Service Tags
+  </MenuButton>
+  <MenuList isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)}>
+    <MenuItem>Option 1</MenuItem>
+    <MenuItem>Option 2</MenuItem>
+    <MenuItem>Option 3</MenuItem>
+  </MenuList>
+</Menu>
+ 
+
+  <MenuButton
+    as={Link}
+    onClick={handleMenuToggle}
+    rightIcon={<IoIosArrowDown style={{ marginRight: '4px' }} />}
+    display="flex"
+    alignItems="center"
+  >
+    Find Service Tags
+  </MenuButton>
+  <MenuList isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)}>
+    <MenuItem>Option 1</MenuItem>
+    <MenuItem>Option 2</MenuItem>
+    <MenuItem>Option 3</MenuItem>
+  </MenuList>
+</Menu>
+ 
+ <Menu>
+            <MenuButton
+              as={Link}
+              onClick={handleMenuToggle}
+            >
+              Find Service Tags
+            </MenuButton>
+            <MenuList isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)}>
+              <MenuItem>Option 1</MenuItem>
+              <MenuItem>Option 2</MenuItem>
+              <MenuItem>Option 3</MenuItem>
+            </MenuList>
+          </Menu>
+ 
+
+          <Menu>
+  <MenuButton
+    as={Link}
+    onClick={handleMenuToggle}
+    rightIcon={<IoIosArrowDown />}
+  >
+    Find Service Tags
+  </MenuButton>
+  <MenuList isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)}>
+    <MenuItem>Option 1</MenuItem>
+    <MenuItem>Option 2</MenuItem>
+    <MenuItem>Option 3</MenuItem>
+  </MenuList>
+</Menu>
+ 
+
+          <Menu>
+            <MenuButton as={Link} onClick={handleMenuToggle}>
+              Find Service Tags <IoIosArrowDown />
+            </MenuButton>
+            <MenuList isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)}>
+              <MenuItem>Option 1</MenuItem>
+              <MenuItem>Option 2</MenuItem>
+              <MenuItem>Option 3</MenuItem>
+            </MenuList>
+          </Menu>
+ 
+  <Menu>
+              <MenuButton as={Link} onClick={handleMenuToggle}>
+                Find Service Tags <IoIosArrowDown />
+              </MenuButton>
+              <MenuList isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)}>
+                <MenuItem>Option 1</MenuItem>
+                <MenuItem>Option 2</MenuItem>
+                <MenuItem>Option 3</MenuItem>
+              </MenuList>
+            </Menu>
+ 
+import React from "react";
+import {
+  Flex,
+  Box,
+  Text,
+  Link,
+  IconButton,
+  useBreakpointValue,
+} from "@chakra-ui/react";
+import { FaBars } from "react-icons/fa";
+import { Button } from "@chakra-ui/react";
+import { IoIosArrowDown } from "react-icons/io";
+
+const Navbar = () => {
+  const isMobile = useBreakpointValue({ base: true, md: false });
+
+  return (
+    <Flex
+      as="nav"
+      h="75px"
+      bg="gray"
+      justify="space-between"
+      align="center"
+      px={4}
+    >
+      {/* Logo and Heading */}
+      <Box display="flex" alignItems="center">
+        {isMobile && (
+          <IconButton
+            icon={<FaBars />}
+            fontSize="2xl"
+            variant="ghost"
+            aria-label="Menu"
+          />
+        )}
+        <Box ml={3}>
+          <img
+            src="images\habot-logo.png"
+            alt="Logo"
+            style={{ height: "100px" }}
+          />
+        </Box>
+      </Box>
+
+      {/* Navigation Links */}
+      {!isMobile && (
+        <Box display="flex" alignItems="center" gap="15px">
+          <Link href="#home" mx={2}>
+            Find Suppliers
+          </Link>
+          <Flex alignItems="center">
+            <Link href="#services" mx={2}>
+              Find Service Tags
+            </Link>
+            <IoIosArrowDown />
+          </Flex>
+          <Button as="div" ml={4}>
+            <Link href="#login" mx={1}>
+              Login
+            </Link>
+            /
+            <Link href="#signup" mx={1}>
+              Signup
+            </Link>
+          </Button>
+        </Box>
+      )}
+    </Flex>
+  );
+};
+
+export default Navbar;
+
+ 
+<Link href="#services" mx={2}>
+            Find Service Tags <IoIosArrowDown />
+          </Link>
+ 
+IoIosArrowDown
+ 
+IoIosArrowDown
+ 
+<Link href="#services" mx={2}>
+            Login / Signup
+          </Link>
+ 
+Services
+ 
+
+          <Link href="#contact" mx={2}>
+            Contact
+          </Link>
+ 
+ About
+ 
+Home
+ 
+D:\07.Git\30.Habot project\habot-react-project\public\
+ 
+./logo.png
+ 
+
+        <Text fontSize="xl" fontWeight="bold" ml={3}>
+          Your Heading
+        </Text>
+ 
+
+import theme from "./theme";
+ 
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ 

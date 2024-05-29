@@ -1,0 +1,104 @@
+.yt-dash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1150px;
+  margin-left: 72px;
+  margin-top: 100px;
+  padding: 20px; /* Add some padding for better spacing */
+  background: #072f57;
+  min-height: 623px; /* Make the container take full viewport height */
+}
+
+.yt-dash-left {
+  flex: 1;
+  padding-right: 20px;
+  padding-left: 20px; /* Space between the video and the text */
+}
+
+.yt-dash-left iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.yt-dash-right {
+  width: 461px;
+  height: 156px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center align text vertically */
+  padding-left: 20px;
+  margin-bottom: 100px;
+  /* Space between the text and the video */
+}
+.yt-dash-right p {
+  font-family: Poppins;
+  width: 421px;
+  font-size: 17.16px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: left;
+  margin-top: 20px;
+  color: white; /* Add color for text */
+  margin-left: 5px;
+}
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+.paragraph img{
+    size: 10px;
+    width: 13px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.yt-dash-text {
+  display: flex;
+  justify-content: space-between;
+  width: 404px;
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 20px;
+}
+
+.buyer,
+.supplier {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+  color: white; /* Initial text color */
+  transition: color 0.3s ease; /* Text color transition */
+}
+
+.buyer::after,
+.supplier::after {
+  content: '';
+  display: block;
+  width: 0; /* Initial width set to 0 */
+  height: 2px;
+  background-color: #EB7150;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buyer:hover,
+.supplier:hover {
+  color: #EB7150; /* Text color change on hover */
+}
+
+.buyer:hover::after,
+.supplier:hover::after {
+  width: 140px; /* Adjust the width as per your requirement */
+  height: 2px;
+}
