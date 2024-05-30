@@ -6,8 +6,9 @@
   opacity: 0px;
   background: #123557;
 }
+
 .footer-main {
-  width: 1080px;
+  width: 100%;
   height: 155px;
   position: relative;
   top: 43px;
@@ -18,8 +19,8 @@
   border-left: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; /* Added */
-  align-items: center; /* Added to vertically center align */
+  justify-content: space-between;
+  align-items: center;
   border-right: 0;
   box-shadow: 0 -5px 5px -5px #ffffff, 0 5px 5px -5px #ffffff;
   opacity: 1;
@@ -30,47 +31,90 @@
   color: white;
   padding-left: 27px;
 }
+
 .footer-left {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-left: 40px;
 }
+
 .footer-col-img img {
   width: 150px;
   margin-top: 35px;
-  display: block; /* Ensures the image is displayed as a block element */
-  /* Centers the image horizontally and adds space below */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-col-img p {
   margin-left: 10px;
-  color: white; /* Remove default margin */
+  color: white;
 }
+
+@media (max-width: 1200px) {
+.footer-main {
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+.footer-main {
+    width: 95%;
+  }
+}
+
 @media (max-width: 768px) {
-  .footer-col {
+.footer-col {
     flex: 1 0 100%;
+  }
+
+.footer-col-img img {
+    width: 100px;
+    margin-top: 20px;
+  }
+
+.footer-col-img p {
+    margin-left: 0;
+  }
+
+.footer-left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+.footer-col-img {
+    margin-bottom: 20px;
+  }
+
+.footer-col h4 {
+    margin-bottom: 20px;
+  }
+
+.footer-col p {
+    margin: 10px 0;
   }
 }
 
 .footer-col {
-  margin-bottom: 20px; /* Add space below the footer column */
+  margin-bottom: 20px;
 }
 
 .footer-col h4 {
-  margin-bottom: 10px; /* Add space below the heading */
+  margin-bottom: 10px;
 }
 
 .footer-col p {
-  margin: 10px 0; /* Add space between the lines of text */
+  margin: 10px 0;
 }
+
 .icons {
   display: flex;
-  justify-content: space-between; /* Optional: Removes this if you want the icons to be centered within the padding */
-  width: 160px; /* Adjust the width as needed */
+  justify-content: space-between;
+  width: 160px;
 }
 
 .icons a {
   text-decoration: none;
-  font-size: 24px; /* To remove the underline from the links */
+  font-size: 24px;
 }

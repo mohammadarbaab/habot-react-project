@@ -1,14 +1,11 @@
 import React from "react";
 import "./Footer.css";
 import logo2 from "../../../assets/HABOT.png";
-import { FaLinkedin } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="footer-container ">
+    <div className="footer-container">
       <footer className="footer-main">
         <div className="footer-left">
           <div className="footer-col-img">
@@ -21,7 +18,7 @@ function Footer() {
               <p>About</p>
             </a>
             <a href="#">
-              <p>FaQ</p>
+              <p>FAQ</p>
             </a>
           </div>
           <div className="footer-col">
@@ -47,18 +44,18 @@ function Footer() {
           </div>
         </div>
         <div className="footer-right">
-          <div class="icons">
+          <div className="icons">
             <a href="#">
-              <FaLinkedin style={{ color: "white" }} />
+              <FaLinkedin />
             </a>
             <a href="#">
-              <FaTwitter style={{ color: "white" }} />
+              <FaTwitter />
             </a>
             <a href="#">
-              <FaFacebookF style={{ color: "white" }} />
+              <FaFacebookF />
             </a>
             <a href="#">
-              <FaInstagram style={{ color: "white" }} />
+              <FaInstagram />
             </a>
           </div>
         </div>
