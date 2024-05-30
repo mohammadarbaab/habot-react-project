@@ -1,8 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import "./NavDrop.css";
 
 const NavDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (!event.target.closest(".dropdown")) {
+        setIsOpen(false);
+      }
+    }
+
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -14,13 +28,11 @@ const NavDropdown = () => {
         Find Service Tags
         <IoIosArrowDown className="dropdown-icon" />
       </li>
-      {isOpen && (
-        <ul className="dropdown-menu">
-          <li>Option 1</li>
-          <li>Option 2</li>
-          <li>Option 3</li>
-        </ul>
-      )}
+      <ul className={`dropdown-content ${isOpen ? "show" : ""}`}>
+        <li><a href="#">Supplier</a></li>
+        <li><a href="#">Mini Supplier</a></li>
+        <li><a href="#">Hard Supplier</a></li>
+      </ul>
     </div>
   );
 };
