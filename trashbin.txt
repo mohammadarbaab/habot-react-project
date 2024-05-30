@@ -1,3 +1,1065 @@
+  .supp-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 100px auto;
+    background: #E8FBFF;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .supp-left,
+  .supp-right {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .supp-left h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .supp-right button {
+    width: 100%;
+    height: 54px;
+    background: #EB7150;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    .supp-container {
+      width: 80%;
+      max-width: 1080px;
+      flex-direction: row; /* Ensure flex items are displayed in a row on larger screens */
+      justify-content: space-between; /* Add space between flex items */
+    }
+
+    .supp-left,
+    .supp-right {
+      width: 48%; /* Adjusted width for larger screens to accommodate space between items */
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .supp-container {
+      width: calc(50% - 20px); /* Adjusted width for even larger screens to accommodate space between items */
+    }
+  }
+
+ 
+.buyers-header {
+    text-align: center;
+    max-width: 839px; /* Adjusted width for responsiveness */
+    margin: 100px auto 0; /* Center header vertically and horizontally */
+}
+ 
+.buyers-container {
+    width: 90%; /* Adjusted width for responsiveness */
+    max-width: 1080px;
+    margin: 50px auto; /* Centering the container horizontally */
+    height: auto; /* Allow height to adjust based on content */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-box {
+    width: calc(30% - 40px); /* Adjusted width for responsiveness */
+    max-width: 300px;
+    border-radius: 5px;
+    height: 300px;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5px; /* Add margin between flex boxes */
+}
+
+.flex-box h1 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    width: 100%; /* Set width to 100% for responsiveness */
+    max-width: 206px; /* Limit max-width */
+    margin-top: 20px; /* Add margin on top */
+}
+
+.buyers-header {
+    text-align: center;
+    max-width: 90%; /* Adjusted width for responsiveness */
+    margin: 100px auto 0; /* Center header vertically and horizontally */
+}
+
+@media screen and (min-width: 76px) {
+    .flex-box {
+        width: calc(45% - 40px); /* Adjusted width for larger screens */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .flex-box {
+        width: calc(30% - 40px); /* Adjusted width for even larger screens */
+    }
+}
+
+ 
+.buyers-container {
+    width: 90%; /* Adjusted width for responsiveness */
+    max-width: 1080px;
+    margin: 50px auto; /* Centering the container horizontally */
+    height: auto; /* Allow height to adjust based on content */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-box {
+    width: calc(30% - 40px); /* Adjusted width for responsiveness */
+    max-width: 300px;
+    border-radius: 5px;
+    height: 300px;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5px; /* Add margin between flex boxes */
+}
+
+.flex-box h1 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    width: 100%; /* Set width to 100% for responsiveness */
+    max-width: 206px; /* Limit max-width */
+    margin-top: 20px; /* Add margin on top */
+}
+
+.buyers-header {
+    text-align: center;
+    max-width: 90%; /* Adjusted width for responsiveness */
+    margin: 100px auto 0; /* Center header vertically and horizontally */
+}
+
+@media screen and (min-width: 769px) {
+    .flex-box {
+        width: calc(45% - 40px); /* Adjusted width for larger screens */
+    }
+}
+
+@media screen and (min-width: 768px) 
+    .flex-box {
+        width: calc(30% - 40px); /* Adjusted width for even larger screens */
+    }
+}
+
+ 
+@media screen and (min-width: 769px) {
+    .flex-box {
+        width: calc(45% - 40px); /* Adjusted width for larger screens */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .flex-box {
+        width: calc(70% - 90px); /* Adjusted width for even larger screens */
+    }
+}
+ 
+.buyers-container {
+    width: 90%; /* Adjusted width for responsiveness */
+    max-width: 1080px;
+    margin: 50px auto; /* Centering the container horizontally */
+    height: auto; /* Allow height to adjust based on content */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-box {
+    width: calc(30% - 40px); /* Adjusted width for responsiveness */
+    max-width: 300px;
+    border-radius: 5px;
+    height: 300px;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5px; /* Add margin between flex boxes */
+}
+
+.flex-box h1 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    width: 100%; /* Set width to 100% for responsiveness */
+    max-width: 206px; /* Limit max-width */
+    margin-top: 20px; /* Add margin on top */
+}
+
+.buyers-header {
+    text-align: center;
+    max-width: 90%; /* Adjusted width for responsiveness */
+    margin: 100px auto 0; /* Center header vertically and horizontally */
+}
+
+
+
+ 
+@media screen and (min-width: 769px) {
+    .flex-box {
+        width: calc(45% - 40px); /* Adjusted width for larger screens */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .flex-box {
+        width: calc(70% - 90px); /* Adjusted width for even larger screens */
+    }
+}
+ 
+.buyers-container {
+    width: 90%; /* Adjusted width for responsiveness */
+    max-width: 1080px;
+    margin: 50px auto; /* Centering the container horizontally */
+    height: auto; /* Allow height to adjust based on content */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-box {
+    width: calc(30% - 40px); /* Adjusted width for responsiveness */
+    max-width: 300px;
+    border-radius: 5px;
+    height: 300px;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5px; /* Add margin between flex boxes */
+}
+
+.flex-box h1 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    width: 100%; /* Set width to 100% for responsiveness */
+    max-width: 206px; /* Limit max-width */
+    margin-top: 20px; /* Add margin on top */
+}
+
+.buyers-header {
+    text-align: center;
+    max-width: 90%; /* Adjusted width for responsiveness */
+    margin: 100px auto 0; /* Center header vertically and horizontally */
+}
+
+@media screen and (min-width: 768px) {
+    .flex-box {
+        width: calc(45% - 40px); /* Adjusted width for larger screens */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .flex-box {
+        width: calc(30% - 40px); /* Adjusted width for even larger screens */
+    }
+}
+
+ 
+.buyers-container {
+    width: 90%; /* Adjusted width for responsiveness */
+    max-width: 1080px;
+    margin: 50px auto; /* Centering the container horizontally */
+    height: auto; /* Allow height to adjust based on content */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-box {
+    width: calc(30% - 40px); /* Adjusted width for responsiveness */
+    max-width: 300px;
+    border-radius: 5px;
+    height: 300px;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5px; /* Add margin between flex boxes */
+}
+
+.flex-box h1 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    width: 100%; /* Set width to 100% for responsiveness */
+    max-width: 206px; /* Limit max-width */
+    margin-top: 20px; /* Add margin on top */
+}
+
+.buyers-header {
+    text-align: center;
+    max-width: 90%; /* Adjusted width for responsiveness */
+    margin: 100px auto 0; /* Center header vertically and horizontally */
+}
+
+@media screen and (min-width: 768px) {
+    .flex-box {
+        width: calc(45% - 40px); /* Adjusted width for larger screens */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .flex-box {
+        width: calc(30% - 40px); /* Adjusted width for even larger screens */
+    }
+}
+
+ 
+.buyers-container {
+    width: 90%; /* Adjusted width for responsiveness */
+    max-width: 1080px;
+    margin: 50px auto; /* Centering the container horizontally */
+    height: auto; /* Allow height to adjust based on content */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-box {
+    width: calc(30% - 40px); /* Adjusted width for responsiveness */
+    max-width: 300px;
+    border-radius: 5px;
+    height: 300px;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5px; /* Add margin between flex boxes */
+}
+
+.flex-box h1 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    width: 100%; /* Set width to 100% for responsiveness */
+    max-width: 206px; /* Limit max-width */
+    margin-top: 20px; /* Add margin on top */
+}
+
+.buyers-header {
+    text-align: center;
+    max-width: 90%; /* Adjusted width for responsiveness */
+    margin: 100px auto 0; /* Center header vertically and horizontally */
+}
+
+@media screen and (min-width: 768px) {
+    .flex-box {
+        width: calc(45% - 40px); /* Adjusted width for larger screens */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .flex-box {
+        width: calc(30% - 40px); /* Adjusted width for even larger screens */
+    }
+}
+
+ 
+.supp-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto;
+  background: #E8FBFF;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.supp-left,
+.supp-right {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.supp-left h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.supp-right button {
+  width: 100%;
+  height: 54px;
+  background: #EB7150;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .supp-container {
+    width: 80%;
+    max-width: 1080px;
+  }
+
+  .supp-left,
+  .supp-right {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .supp-container {
+    width: calc(30% - 40px); /* Adjusted width for even larger screens */
+  }
+}
+
+ 
+.supp-container {
+  width: 90%; /* Adjusted width for responsiveness */
+  max-width: 600px; /* Limit max-width for larger screens */
+  margin: 100px auto; /* Centering the container vertically and horizontally */
+  background: #E8FBFF;
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+}
+
+.supp-left,
+.supp-right {
+  width: 100%; /* Set width to 100% for responsiveness */
+  padding: 20px; /* Add padding for spacing */
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+.supp-left h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.supp-right button {
+  width: 100%; /* Set width to 100% for responsiveness */
+  height: 54px;
+  background: #EB7150;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .supp-container {
+    width: 80%; /* Adjusted width for larger screens */
+    max-width: 1080px; /* Limit max-width for larger screens */
+  }
+
+  .supp-left,
+  .supp-right {
+    width: 50%; /* Set width to 50% for larger screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+}@media screen and (min-width: 992px) {
+  .supp-container{
+      width: calc(30% - 40px);
+      .supp-left,
+  .supp-right {
+    width: 50%; /* Set width to 50% for larger screens */
+    height: auto; /* Allow height to adjust based on content */
+  } /* Adjusted width for even larger screens */
+  }
+}
+
+ 
+flex-box 
+ 
+.supp-container {
+  width: 100%;
+  height: auto; /* Set height to auto for responsiveness */
+  background: #E8FBFF;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+}
+
+.supp-left,
+.supp-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Set width to 100% for responsiveness */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.supp-left h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.supp-right button {
+  width: 100%; /* Set width to 100% for responsiveness */
+  max-width: 216px; /* Limit max-width for larger screens */
+  height: 54px;
+  background: #EB7150;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .supp-left,
+  .supp-right {
+    width: 50%; /* Set width to 50% for larger screens */
+    height: 254px; /* Restore original height for larger screens */
+  }
+}
+
+ 
+.buyers-container {
+    width: 1080px;
+    /* max-width: 1080px; */
+    margin-top: 50px;
+    margin-left: auto;
+    height: 600px;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-box {
+    width: 100%; /* Adjust width as needed */
+    max-width: 300px; /* Set maximum width */
+    border-radius: 5px;
+    height: 300px;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-box h1 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    width: 206px;
+}
+
+.buyers-header {
+    text-align: center;
+    max-width: 839px;
+    margin: 100px auto 0; /* Center header vertically and horizontally */
+}
+
+@media screen and (min-width: 768px) {
+    .flex-box {
+        width: 45%; /* Adjust width for larger screens */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .flex-box {
+        width: 30%; /* Adjust width for even larger screens */
+    }
+}
+
+ 
+.buyers-container {
+    width: 1080px;
+    /* max-width: 1080px; */
+    margin-top: 50px;
+    margin-left: auto;
+    height: 600px;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-box {
+    width: 100%; /* Adjust width as needed */
+    max-width: 300px; /* Set maximum width */
+    border-radius: 5px;
+    height: 300px;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-box h1 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    width: 206px;
+}
+
+.buyers-header {
+    text-align: center;
+    max-width: 839px;
+    margin: 100px auto 0; /* Center header vertically and horizontally */
+}
+
+@media screen and (min-width: 768px) {
+    .flex-box {
+        width: 45%; /* Adjust width for larger screens */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .flex-box {
+        width: 30%; /* Adjust width for even larger screens */
+    }
+}
+
+ 
+
+     /* Add margin between flex boxes */
+ 
+margin: 20px;
+ 
+.buyers-container {
+    width: 1080px;
+    height: 600px;
+    margin-top: 50px;
+    margin-left: 120px; /* Left margin */
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-box {
+    width: 30%; /* Adjust width as needed */
+    border-radius: 5px;
+    height: 300px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+    margin: 0; /* Remove margin */
+}
+
+.flex-box h1{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    width: 206px;
+}
+
+.buyers-header{
+    text-align: center;
+    width: 839px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 220px;
+}
+ 
+.buyers-container {
+    width: 1080px;
+    height: 600px;
+    margin-top: 50px;
+    margin-left: 120px; /* Left margin */
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-box {
+    width: 30%; /* Adjust width as needed */
+    border-radius: 5px;
+    height: 300px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+    margin: 0; /* Remove margin */
+}
+
+.flex-box h1{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    width: 206px;
+}
+
+.buyers-header{
+    text-align: center;
+    width: 839px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 220px;
+}
+ 
+.supp-container{
+    width: 100%;
+    height: 254px;
+    background: #E8FBFF;
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+}
+
+.supp-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 254px; /* Adjust height as needed */
+    position: relative;
+  }
+  
+  .supp-left h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0; /* Remove default margin */
+    text-align: center;
+    width: 100%; /* Ensure the width of the h1 is 100% */
+  }
+  
+  .supp-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 254px; /* Adjust height as needed */
+    position: relative;
+  }
+  
+  .supp-right button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0; /* Remove default margin */
+    text-align: center;
+    width: 216px ;/* Ensure the width of the h1 is 100% */
+    height: 54px;
+    background:#EB7150;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    align-items: Center;
+    border-radius: 5px 5px 5px 5px;
+    border: #EB7150;
+  }
+ 
+.buyers-container {
+    width: 1080px;
+    height: 600px;
+    margin-top: 50px;
+    margin-left: 160px; /* Left margin */
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-box {
+    width: 30%; /* Adjust width as needed */
+    border-radius: 5px;
+    height: 300px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+    margin: 0; /* Remove margin */
+}
+
+.flex-box h1{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    width: 206px;
+}
+
+.buyers-header{
+    text-align: center;
+    width: 839px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 220px;
+}
+ 
+
+  margin-bottom: 30px;
+ 
+
+  margin-bottom: 0px;
+ 
+
+
+.yt-dash-left.buyer,
+.yt-dash-left.supplier {
+    width: auto;
+    height: auto;
+    margin: 10px 0;
+  }
+ 
+
+
+.yt-dash-left.buyer,
+.yt-dash-left.supplier {
+    width: auto;
+    height: auto;
+    margin: 10px 0;
+  }
+ 
+
+.yt-dash-left img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+  }
+ 
+ 0px 20px
+ 
+
+.yt-dash-left.buyer,
+.yt-dash-left.supplier {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+  border-radius: 1px 0px 0px 0px;
+  color: #EB7150;
+}
+ 
+
+.yt-dash-left.buyer,
+.yt-dash-left.supplier {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+  border-radius: 1px 0px 0px 0px;
+  color: #EB7150;
+}
+ 
+
+.yt-dash-left img {
+  width: 9.14px;
+  height: 9.11px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+ 
+
+/* .yt-dash-left p {
+  font-family: Poppins;
+  font-size: 18.75px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 10px;
+} */
+
+ 
+.yt-dash-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 72px;
+  margin-top: 100px;
+  padding: 20px;
+  background: #072f57;
+  min-height: 623px;
+}
+
+.yt-dash-left {
+  position: relative;
+  width: 100%;
+  max-width: 461px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.yt-dash-left p {
+  font-family: Poppins;
+  font-size: 18.75px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.yt-dash-left img {
+  width: 9.14px;
+  height: 9.11px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.yt-dash-left.buyer,
+.yt-dash-left.supplier {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+  border-radius: 1px 0px 0px 0px;
+  color: #EB7150;
+}
+
+.yt-dash-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.buyer,
+.supplier {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.buyer::after,
+.supplier::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #EB7150;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buyer:hover,
+.supplier:hover {
+  color: #EB7150;
+}
+
+.buyer:hover::after,
+.supplier:hover::after {
+  width: 140px;
+  height: 2px;
+}
+
+.yt-dash-paragraphs {
+  margin-top: 20px;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+
+.paragraph img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+.yt-dash-container {
+    flex-direction: row;
+    height: auto;
+  }
+
+.yt-dash-left,
+.yt-dash-right {
+    width: 50%;
+    max-width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+.yt-dash-left img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+  }
+
+.yt-dash-left.buyer,
+.yt-dash-left.supplier {
+    width: auto;
+    height: auto;
+    margin: 10px 0;
+  }
+
+.yt-dash-text {
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+.yt-dash-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.yt-dash-right.yt-dash-text {
+    margin-top: 0;
+  }
+
+.yt-dash-right.yt-dash-paragraphs {
+    margin-top: 20px;
+  }
+}
+ 
 .yt-dash-container {
   display: flex;
   justify-content: center;

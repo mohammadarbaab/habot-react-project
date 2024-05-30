@@ -1,40 +1,56 @@
+/* Adjustments for responsiveness */
+
+/* Container for buyers */
 .buyers-container {
-    width: 1080px;
-    height: 600px;
-    margin-top: 50px;
-    margin-left: 160px; /* Left margin */
-    flex-direction: row;
+    width: 90%; /* Adjusted width for responsiveness */
+    max-width: 1080px;
+    margin: 50px auto; /* Centering the container horizontally */
+    height: auto; /* Allow height to adjust based on content */
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
+
+/* Individual flex boxes */
 .flex-box {
-    width: 30%; /* Adjust width as needed */
+    width: calc(33.33% - 20px); /* Adjusted width for responsiveness */
+    max-width: 300px;
     border-radius: 5px;
-    height: 300px;
-    color: white;
+    color: black;
     font-size: 25px;
     text-align: center;
-    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Center horizontally */
-    margin: 0; /* Remove margin */
+    height: 254px;
+    align-items: center;
+    margin: 0.5px; /* Add margin between flex boxes */
 }
 
-.flex-box h1{
+/* Title in the flex box */
+.flex-box h1 {
     font-size: 20px;
     line-height: 26px;
     font-weight: 500;
-    width: 206px;
+    margin-top: 20px; /* Add margin on top */
 }
 
-.buyers-header{
+/* Header for buyers section */
+.buyers-header {
     text-align: center;
-    width: 839px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 100px;
-    margin-left: 220px;
+    max-width: 839px; /* Adjusted width for responsiveness */
+    margin: 100px auto 0; /* Center header vertically and horizontally */
+}
+
+/* Media Queries for different screen sizes */
+@media screen and (max-width: 992px) {
+    .flex-box {
+        width: calc(50% - 20px); /* Adjusted width for medium screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-box {
+        width: calc(100% - 20px); /* Adjusted width for smaller screens */
+    }
 }

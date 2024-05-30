@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin-left: 72px;
+  width: 90%;
+  margin-left: 60px;
   margin-top: 100px;
   padding: 20px;
   background: #072f57;
@@ -19,32 +19,6 @@
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
-}
-
-.yt-dash-left p {
-  font-family: Poppins;
-  font-size: 18.75px;
-  font-weight: 500;
-  line-height: 1.5;
-  text-align: left;
-  margin-top: 10px;
-}
-
-.yt-dash-left img {
-  width: 9.14px;
-  height: 9.11px;
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
-.yt-dash-left.buyer,
-.yt-dash-left.supplier {
-  position: relative;
-  display: inline-block;
-  margin-right: 20px;
-  margin-top: 10px;
-  border-radius: 1px 0px 0px 0px;
-  color: #EB7150;
 }
 
 .yt-dash-text {
@@ -95,12 +69,14 @@
 }
 
 .yt-dash-paragraphs {
-  margin-top: 20px;
+  margin-top: 10px;
+  color: white;
 }
 
 .paragraph {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .paragraph img {
@@ -122,19 +98,6 @@
     box-sizing: border-box;
   }
 
-.yt-dash-left img {
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
-  }
-
-.yt-dash-left.buyer,
-.yt-dash-left.supplier {
-    width: auto;
-    height: auto;
-    margin: 10px 0;
-  }
-
 .yt-dash-text {
     font-size: 30px;
     margin-top: 0;
@@ -153,5 +116,16 @@
 
 .yt-dash-right.yt-dash-paragraphs {
     margin-top: 20px;
+  }
+
+  /* Add some space between the buyer and supplier elements */
+ .yt-dash-left.buyer,
+ .yt-dash-left.supplier {
+    margin-right: 40px;
+  }
+
+  /* Add some gap between the lines in the paragraph */
+ .yt-dash-paragraphs.paragraph {
+    margin-bottom: 15px;
   }
 }
