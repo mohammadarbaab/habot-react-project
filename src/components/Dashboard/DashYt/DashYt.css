@@ -4,9 +4,8 @@
   justify-content: center;
   align-items: center;
   width: 90%;
-  margin-left: 60px;
-  margin-top: 100px;
-  padding: 20px;
+  margin: auto;
+  margin-top: 60px;
   background: #072f57;
   min-height: 623px;
 }
