@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
     <nav className="navbar-container">
-      <img src={logo} alt="logo" className="logo" />
+      <Link to="/"><img src={logo} alt="logo" className="logo" /></Link>
       <div className="menu-icon" onClick={toggleNav}>
         &#9776;
       </div>
