@@ -23,7 +23,6 @@
     margin-left: 10px;
   }
   
-  /* Styling for dropdown options */
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -32,13 +31,11 @@
     border-bottom: 1px solid #ddd;
   }
   
-  /* Change color of dropdown options on hover */
   .dropdown-content a:hover {
     background-color: #ddd;
   }
 
-  /* Animation for showing dropdown */
   .dropdown-content.show {
     display: block;
-    max-height: 200px; /* Adjust this value according to the content height */
+    max-height: 200px; 
   }

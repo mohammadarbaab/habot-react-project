@@ -65,8 +65,8 @@
   .dash-container {
     flex-direction: column;
     align-items: center;
-    padding-left: 0; /* Remove left padding */
-    justify-content: center; /* Center align items */
+    padding-left: 0; 
+    justify-content: center; 
   }
 
   .dash-left, .dash-right {

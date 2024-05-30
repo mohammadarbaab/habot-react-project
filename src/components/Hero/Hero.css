@@ -1,4 +1,4 @@
-/* Base styles for Hero section */
+
 .hero {
   width: 100%;
   min-height: 523px;
@@ -28,7 +28,7 @@
 
 .hero-text h1 {
   font-family: Poppins, sans-serif;
-  font-size: 3rem; /* Adjusted for responsiveness */
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 10px;
@@ -36,14 +36,14 @@
 
 .hero-text h3 {
   font-family: Poppins, sans-serif;
-  font-size: 1.5rem; /* Adjusted for responsiveness */
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.2;
 }
 
 .hero-inputs {
   display: flex;
-  flex-direction: row; /* Display inputs in a row on larger screens */
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -52,16 +52,16 @@
 }
 
 .hero-inputs input {
-  width: calc(50% - 10px); /* Adjust the width to fit two inputs in one row */
+  width: calc(50% - 10px); 
   height: 56px;
-  padding: 0 20px 0 40px; /* Adjust padding for the icon */
+  padding: 0 20px 0 40px;
   border-radius: 5px;
   border: 1px solid transparent;
   background-color: #fff;
   color: black;
   margin: 5px;
-  background-size: 24px; /* Adjust size of the icon */
-  background-position: 10px center; /* Adjust position of the icon */
+  background-size: 24px; 
+  background-position: 10px center; 
   background-repeat: no-repeat;
 }
 
@@ -109,22 +109,22 @@
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   .hero-text h1 {
-    font-size: 2rem; /* Smaller font size on small screens */
+    font-size: 2rem; 
   }
 
   .hero-text h3 {
-    font-size: 1.25rem; /* Smaller font size on small screens */
+    font-size: 1.25rem; 
   }
 
   .hero-inputs {
-    flex-direction: column; /* Display inputs in a column on small screens */
+    flex-direction: column; 
     width: 100%;
   }
 
   .hero-inputs input,
   .hero-inputs button {
     width: 90%;
-    margin: 5px 0; /* Adjust spacing between inputs */
+    margin: 5px 0; 
   }
 
   .hero-footer {

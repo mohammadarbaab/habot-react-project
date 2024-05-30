@@ -1,3 +1,373 @@
+import React from 'react';
+import { Route, Routes} from 'react-router-dom';
+import { Router } from 'react-router-dom';
+
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
+import Dashboard from './components/Dashboard/Dashboard';
+import DashYt from './components/Dashboard/DashYt/DashYt';
+import SupplierFind from './components/Pages/SupplierFind/SupplierFind';
+import BuyersPost from './components/Pages/BuyersPost/BuyersPost';
+import Footer from './components/Pages/Footer/Footer';
+import Signup from './components/Auth/Signup/Signup';
+import Login from './components/Auth/Signin/Login';
+
+function App() {
+  return (
+    <Router>
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/signup">
+          <Signup />
+        </Route>
+        <Route path="/signin">
+          <Login />
+        </Route>
+        <Route>
+          <Hero />
+          <Dashboard />
+          <DashYt />
+          <SupplierFind />
+          <BuyersPost />
+          <Footer />
+        </Route>
+      </Routes>
+    </div>
+  </Router>
+  );
+}
+
+export default App;
+
+ 
+
+          {/* Default route for other paths */}
+ 
+
+          {/* Add other components as needed */}
+ 
+
+    <Router>
+    <Navbar />
+    <Routes>
+      <Route exact path="/" element={<Hero />} />
+      <Route path="/general" element={<Dashboard />} />
+      <Route path="/apple" element={<DashYt />} />
+      <Route
+        path="/entertainment"
+        element={<SupplierFind />}
+      />
+      <Route path="/health" element={<BuyersPost/>} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+    </Routes>
+    <Footer />
+  </Router>
+ 
+
+import { BrowserRouter } from "react-router-dom";
+ 
+
+    <BrowserRouter>
+ 
+
+    </BrowserRouter>
+ 
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+ 
+ BrowserRouter as Router,
+ 
+
+      <Route path="/science" element={<FetchData />} />
+      <Route path="/technology" element={<FetchData />} />
+      <Route path="/sports" element={<FetchData  />} />
+ 
+FetchData  
+ 
+cat="entertainment"
+ 
+
+import Signin from './components/Auth/Signin/Login';
+ 
+Login
+ 
+cat="sports"
+ 
+cat="technology" 
+ 
+cat="science" 
+ 
+cat="health"
+ 
+cat="apple" 
+ 
+cat="general"
+ 
+
+    <Router>
+      <div>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact>
+            <Hero />
+            <Dashboard />
+          </Route>
+          <Route path="/dashyt/:videoId">
+            {/* Assuming videoId is dynamic */}
+            {({ match }) => <DashYt videoId={match.params.videoId} />}
+          </Route>
+          <Route path="/supplierfind">
+            <SupplierFind />
+          </Route>
+          <Route path="/buyerspost">
+            <BuyersPost />
+          </Route>
+          <Route path="/signup">
+            <Signup />
+          </Route>
+          <Route path="/signin">
+            <Signin />
+          </Route>
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
+ 
+
+        <Switch>
+ 
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+ 
+/Signin
+ 
+./Signup
+ 
+./Footer
+ 
+./BuyersPost
+ 
+/SupplierFind
+ 
+./DashYt
+ 
+./Dashboard
+ 
+./Hero
+ 
+./Navbar
+ 
+import React from 'react'
+import Navbar from './components/Navbar/Navbar'
+import './index.css'
+import Hero from './components/Hero/Hero'
+import Dashboard from './components/Dashboard/Dashboard.jsx'
+import DashYt from './components/Dashboard/DashYt/DashYt.jsx'
+import SupplierFind from './components/Pages/SupplierFind/SupplierFind.jsx'
+import BuyersPost from './components/Pages/BuyersPost/BuyersPost.jsx'
+import Footer from './components/Pages/Footer/Footer.jsx'
+import Signup from './components/Auth/Signup/Signup.jsx'
+import Signin from './components/Auth/Signin/Login.jsx'
+
+function App() {
+  const videoId = 'D-MPOcj-CfY';
+  return (
+    <div>
+      <Navbar />
+      <Hero />
+      <Dashboard />
+      <DashYt videoId={videoId} />
+      <SupplierFind />
+      <BuyersPost />
+      <Footer />
+      <Signup />
+     <Signin />
+    </div>
+  )
+}
+
+export default App
+
+ 
+
+import { auth } from "../../../firebase";
+ 
+
+import { auth } from "../../../firebase";
+ 
+
+import { auth } from "../../../../firebase";
+ 
+
+import { auth } from "../../firebase";
+ 
+
+import { auth } from "../../../../firebase";
+ 
+
+import InputControl from "../InputControl/InputControl";
+ 
+
+''
+ 
+
+import styles from "./InputControl.module.css";
+ 
+
+import styles from "./Signup.module.css";
+ 
+
+import {} from 'firebse/auth'
+ 
+
+import { auth } from "../../firebase";
+ 
+
+import { doc } from "firebase/firestore";
+ 
+
+import { setDoc } from "firebase/firestore";
+ 
+
+import { db } from "../../firebase";
+ 
+
+import { collection } from "firebase/firestore";
+ 
+
+import {  } from "firebase/auth";
+ 
+
+import {  } from "firebase/auth";
+ 
+Signin.
+ 
+
+  /* Gap for spacing when fields are not filled */
+ 
+
+  /* Style required fields */
+ 
+/* Ensure the width of the h1 is 100% */
+ 
+/* Remove default margin */
+ 
+/* Adjust height as needed */
+ 
+ /* Ensure the width of the h1 is 100% */
+ 
+/* Remove default margin */
+ 
+/* Adjust height as needed */
+ 
+/* Adjusted width for medium screens */
+ 
+/* Adjusted width for smaller screens */
+ 
+/* Center header vertically and horizontally */
+ 
+/* Adjusted width for responsiveness */
+ 
+ /* Add margin on top */
+ 
+/* Add margin between flex boxes */
+}
+ 
+/* Adjusted width for responsiveness */
+ 
+ /* Allow height to adjust based on content */
+ 
+/* Centering the container horizontally */
+ 
+/* Adjusted width for responsiveness */
+ 
+/* Adjustments for responsiveness */
+
+/* Container for buyers */
+ 
+
+  /* Animation for showing dropdown */
+ 
+/* Adjust this value according to the content height */
+ 
+
+  /* Change color of dropdown options on hover */
+ 
+
+  /* Styling for dropdown options */
+ 
+/* Adjust spacing between inputs */
+ 
+/* Display inputs in a column on small screens */
+ 
+/* Smaller font size on small screens */
+ 
+/* Smaller font size on small screens */
+ 
+/* Adjust position of the icon */
+ 
+/* Adjust size of the icon */
+ 
+ /* Adjust padding for the icon */
+ 
+/* Adjust the width to fit two inputs in one row */
+ 
+ /* Display inputs in a row on larger screens */
+ 
+ /* Adjusted for responsiveness */
+ 
+ /* Adjusted for responsiveness */
+ 
+/* Base styles for Hero section */
+ 
+/* Remove left padding */
+ 
+/* Center align items */
+ 
+
+  /* Add some gap between the lines in the paragraph */
+ 
+
+
+  /* Add some space between the buyer and supplier elements */
+ 
+
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+ 
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+ 
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the bu
+ 
+ild.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+ 
+React App
+ 
 Option 1
  
 import React, { useState, useEffect } from "react";

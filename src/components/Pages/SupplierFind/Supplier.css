@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-  height: 254px; /* Adjust height as needed */
+  height: 254px; 
   position: relative;
 }
 
@@ -21,9 +21,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 0; /* Remove default margin */
+  margin: 0; 
   text-align: center;
-  width: 100%; /* Ensure the width of the h1 is 100% */
+  width: 100%;
 }
 
 .supp-right {
@@ -31,7 +31,7 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-  height: 254px; /* Adjust height as needed */
+  height: 254px; 
   position: relative;
 }
 
@@ -40,9 +40,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 0; /* Remove default margin */
+  margin: 0; 
   text-align: center;
-  width: 216px ;/* Ensure the width of the h1 is 100% */
+  width: 216px ;
   height: 54px;
   background:#EB7150;
   color: white;

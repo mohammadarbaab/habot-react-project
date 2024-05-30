@@ -44,11 +44,11 @@
 
 .buyer::after,
 .supplier::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 2px;
-  background-color: #EB7150;
+  background-color: #eb7150;
   transition: width 0.3s ease;
   position: absolute;
   bottom: 0;
@@ -58,7 +58,7 @@
 
 .buyer:hover,
 .supplier:hover {
-  color: #EB7150;
+  color: #eb7150;
 }
 
 .buyer:hover::after,
@@ -84,47 +84,44 @@
 }
 
 @media screen and (min-width: 768px) {
-.yt-dash-container {
+  .yt-dash-container {
     flex-direction: row;
     height: auto;
   }
 
-.yt-dash-left,
-.yt-dash-right {
+  .yt-dash-left,
+  .yt-dash-right {
     width: 50%;
     max-width: 50%;
     padding: 20px;
     box-sizing: border-box;
   }
 
-.yt-dash-text {
+  .yt-dash-text {
     font-size: 30px;
     margin-top: 0;
   }
 
-.yt-dash-right {
+  .yt-dash-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-.yt-dash-right.yt-dash-text {
+  .yt-dash-right.yt-dash-text {
     margin-top: 0;
   }
 
-.yt-dash-right.yt-dash-paragraphs {
+  .yt-dash-right.yt-dash-paragraphs {
     margin-top: 20px;
   }
-
-  /* Add some space between the buyer and supplier elements */
- .yt-dash-left.buyer,
- .yt-dash-left.supplier {
+  .yt-dash-left.buyer,
+  .yt-dash-left.supplier {
     margin-right: 40px;
   }
 
-  /* Add some gap between the lines in the paragraph */
- .yt-dash-paragraphs.paragraph {
+  .yt-dash-paragraphs.paragraph {
     margin-bottom: 15px;
   }
 }

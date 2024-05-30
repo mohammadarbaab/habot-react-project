@@ -1,11 +1,9 @@
-/* Adjustments for responsiveness */
 
-/* Container for buyers */
 .buyers-container {
-    width: 90%; /* Adjusted width for responsiveness */
+    width: 90%; 
     max-width: 1080px;
-    margin: 50px auto; /* Centering the container horizontally */
-    height: auto; /* Allow height to adjust based on content */
+    margin: 50px auto; 
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -13,7 +11,7 @@
 
 /* Individual flex boxes */
 .flex-box {
-    width: calc(33.33% - 20px); /* Adjusted width for responsiveness */
+    width: calc(33.33% - 20px); 
     max-width: 300px;
     border-radius: 5px;
     color: black;
@@ -24,7 +22,7 @@
     justify-content: center;
     height: 254px;
     align-items: center;
-    margin: 0.5px; /* Add margin between flex boxes */
+    margin: 0.5px; 
 }
 
 /* Title in the flex box */
@@ -32,25 +30,25 @@
     font-size: 20px;
     line-height: 26px;
     font-weight: 500;
-    margin-top: 20px; /* Add margin on top */
+    margin-top: 20px;
 }
 
 /* Header for buyers section */
 .buyers-header {
     text-align: center;
-    max-width: 839px; /* Adjusted width for responsiveness */
-    margin: 100px auto 0; /* Center header vertically and horizontally */
+    max-width: 839px; 
+    margin: 100px auto 0; 
 }
 
 /* Media Queries for different screen sizes */
 @media screen and (max-width: 992px) {
     .flex-box {
-        width: calc(50% - 20px); /* Adjusted width for medium screens */
+        width: calc(50% - 20px); 
     }
 }
 
 @media screen and (max-width: 768px) {
     .flex-box {
-        width: calc(100% - 20px); /* Adjusted width for smaller screens */
+        width: calc(100% - 20px); 
     }
 }
