@@ -1,5 +1,6 @@
 import React from 'react'
 import './Supplier.css'
+import { Link } from 'react-router-dom'
 
 function SupplierFind() {
   return (
@@ -7,8 +8,8 @@ function SupplierFind() {
     <div className='supp-left'>
         <h1>Let Suppliers Find You</h1>
     </div>      
-    <div className='supp-right'>
-        <button>Get Verified</button>
+    <div className='supp-right' >
+        <Link to="/signup"><button>Get Verified</button></Link>
     </div>      
     </div>
   )

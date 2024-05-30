@@ -2,6 +2,7 @@ import React from "react";
 import "./Dashboard.css";
 import { IoMdArrowForward } from "react-icons/io";
 import DashboardButtons from "./DashboardButton/DashboardButtons";
+import { Link } from "react-router-dom";
 
 function Dashboard() {
   return (
@@ -15,7 +16,7 @@ function Dashboard() {
           first step towards realizing your entrepreneurial dreams.
         </p>
         <button className="dash-button" style={{ position: "relative" }}>
-          Sign up Today!
+          <Link to="/signup">Sign up Today!</Link>
           <IoMdArrowForward
             style={{
               position: "absolute",
