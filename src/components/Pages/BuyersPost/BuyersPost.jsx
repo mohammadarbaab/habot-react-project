@@ -11,35 +11,35 @@ function BuyersPost() {
   return (
     <>
       <div className="buyers-header">
-      <Title />
+        <Title />
       </div>
       <div />
       <div className="buyers-container">
         <div className="flex-box" style={{ backgroundColor: "#E8FBFF" }}>
-        <RiAdminFill size="80px" />
+          <RiAdminFill size="80px" />
           <h1>Select Your Role and Sign Up</h1>
         </div>
         <div className="flex-box">
-        <FaAddressBook size="80px"/>
+          <FaAddressBook size="80px" />
           <h1>Buyers Post Your Requirements</h1>
         </div>
         <div className="flex-box" style={{ backgroundColor: "#E8FBFF" }}>
-        <VscOpenPreview size="80px"/>
+          <VscOpenPreview size="80px" />
           <h1> Review, Select, and Contact the Best Suppliers</h1>
         </div>
         <div className="flex-box">
-        <HiBookOpen size="80px" />
+          <HiBookOpen size="80px" />
           <h1>
             {" "}
             Suppliers Complete your profile and get notified for opportunities
           </h1>
         </div>
         <div className="flex-box" style={{ backgroundColor: "#E8FBFF" }}>
-        <BsJournalBookmark  size="80px"/>
+          <BsJournalBookmark size="80px" />
           <h1>Contact to Buyers and Share your Quote for the service</h1>
         </div>
         <div className="flex-box">
-        <GiShakingHands size="80px"/>
+          <GiShakingHands size="80px" />
           <h1>
             Both the Parties can Connect and Make Business Leave a Feedback
           </h1>

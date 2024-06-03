@@ -1,3 +1,18 @@
+
+
+/* Individual flex boxes */
+ 
+
+
+/* Title in the flex box */
+ 
+
+
+/* Header for buyers section */
+ 
+
+/* Media Queries for different screen sizes */
+ 
 /* Center icons horizontally */
  
 /* Center items vertically */
