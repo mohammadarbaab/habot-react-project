@@ -1,9 +1,9 @@
 import React from "react";
 import "./DashYt.css";
 import YouTubeEmbed from "../YoutubeEmbed/YtEmbed";
-import checkicon from '../../../assets/check.png'
+import checkicon from "../../../assets/check.png";
 
-function DashYt({ videoId}) {
+function DashYt({ videoId }) {
   return (
     <div className="yt-dash-container">
       <div className="yt-dash-left">

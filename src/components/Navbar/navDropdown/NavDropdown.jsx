@@ -29,9 +29,15 @@ const NavDropdown = () => {
         <IoIosArrowDown className="dropdown-icon" />
       </li>
       <ul className={`dropdown-content ${isOpen ? "show" : ""}`}>
-        <li><a href="#">Supplier</a></li>
-        <li><a href="#">Mini Supplier</a></li>
-        <li><a href="#">Hard Supplier</a></li>
+        <li>
+          <a href="#">Supplier</a>
+        </li>
+        <li>
+          <a href="#">Mini Supplier</a>
+        </li>
+        <li>
+          <a href="#">Hard Supplier</a>
+        </li>
       </ul>
     </div>
   );
