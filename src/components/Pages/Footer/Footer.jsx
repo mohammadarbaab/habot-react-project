@@ -7,7 +7,10 @@ import {
   FaFacebookF,
   FaInstagram,
 } from "react-icons/fa";
-
+import instagram from "../../../assets/Item → Link - Instagram.png"
+import fb from "../../../assets/Item → Link - Facebook.png"
+import x from "../../../assets/Item → Link - Twitter.png"
+import linkdln from "../../../assets/Item → Link - LinkedIn.png"
 function Footer() {
   return (
     <div className="footer-container">
@@ -17,50 +20,40 @@ function Footer() {
             <img src={logo2} alt="Logo" />
             <p>© R Singhania</p>
           </div>
-          <div className="footer-col">
-            <h4>Company</h4>
-            <a href="#">
-              <p>About</p>
-            </a>
-            <a href="#">
-              <p>FAQ</p>
-            </a>
-          </div>
-          <div className="footer-col">
-            <h4>Terms</h4>
-            <a href="#">
-              <p>Data privacy</p>
-            </a>
-            <a href="#">
-              <p>Terms</p>
-            </a>
-            <a href="#">
-              <p>Accessibility</p>
-            </a>
-          </div>
-          <div className="footer-col">
-            <h4>Related</h4>
-            <a href="#">
-              <p>Find Buyer</p>
-            </a>
-            <a href="#">
-              <p>Feedback</p>
-            </a>
-          </div>
+          <div class="footer-columns">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#"><p>About</p></a>
+        <a href="#"><p>FAQ</p></a>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Terms</h4>
+        <a href="#"><p>Data privacy</p></a>
+        <a href="#"><p>Terms</p></a>
+        <a href="#"><p>Accessibility</p></a>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Related</h4>
+        <a href="#"><p>Find Buyer</p></a>
+        <a href="#"><p>Feedback</p></a>
+      </div>
+    </div>
         </div>
         <div className="footer-right">
           <div className="icons">
             <a href="#">
-              <FaLinkedin />
+              <img src={linkdln}/>
             </a>
             <a href="#">
-              <FaTwitter />
+              <img src={x}/>
             </a>
             <a href="#">
-              <FaFacebookF />
+              <img src={fb}/>
             </a>
             <a href="#">
-              <FaInstagram />
+              <img src={instagram}/>
             </a>
           </div>
         </div>

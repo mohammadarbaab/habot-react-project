@@ -7,8 +7,6 @@ import DashYt from "./components/Dashboard/DashYt/DashYt";
 import SupplierFind from "./components/Pages/SupplierFind/SupplierFind";
 import BuyersPost from "./components/Pages/BuyersPost/BuyersPost";
 import Footer from "./components/Pages/Footer/Footer";
-import Signup from "./components/Auth/Signup/Signup";
-import Login from "./components/Auth/Signin/Login";
 
 function App() {
   return (
@@ -16,8 +14,6 @@ function App() {
       <div>
         <Navbar />
         <Routes>
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/signin" element={<Login />} />
           <Route path="/" element={<DefaultRoutes />} />
         </Routes>
       </div>

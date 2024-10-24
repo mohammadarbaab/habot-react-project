@@ -1,9 +1,16 @@
 .dash-container {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-left: 80px;
+  /* justify-content: space-between; */
+  justify-content: center;
+  /* align-items: flex-start; */
+  max-width: 90%;
+  /* align-items: center; */
+  margin: 0 auto;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  padding: 10px;
   margin-top: 60px;
+  /* background-color: gray; */
 }
 
 .dash-left {
@@ -24,10 +31,12 @@
 .dash-left p {
   font-family: Poppins, sans-serif;
   font-size: 1rem;
+  width: 500px;
   font-weight: 300;
   line-height: 1.75rem;
   text-align: left;
   margin-top: 20px;
+  text-align: justify;
 }
 
 .dash-button {
@@ -43,12 +52,13 @@
   height: 54px;
   border-radius: 5px;
   border: none;
-  margin-top: 30px;
+  margin-top: 35px;
+  position: relative; /* Keep the button's positioning relative */
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  justify-content: center; /* Center the content */
+  align-items: center; /* Center the content */
 }
+
 
 .dash-right {
   flex: 1;
@@ -59,6 +69,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-left: 100px;
 }
 
 @media (max-width: 768px) {

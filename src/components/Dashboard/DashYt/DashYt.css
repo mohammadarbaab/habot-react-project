@@ -1,4 +1,4 @@
-.yt-dash-container {
+/* .yt-dash-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,4 +124,162 @@
   .yt-dash-paragraphs.paragraph {
     margin-bottom: 15px;
   }
+} */
+
+
+/* Base Styles */
+.container-yt {
+  display: flex;
+  justify-content: center;  
+  align-items: flex-start;  
+  padding: 105px 40px 0px 40px;
+  max-width: 84.5%;
+  margin: 0 auto;
+  background-color: #0f2c50;
+  min-height: 500px;   
+  margin-top: 50px;  
+  flex-direction: row; /* Default to row for larger screens */
 }
+
+.left-yt {
+  flex: 1;
+  padding-right: 10px;
+  margin-left: 15px;
+}
+
+.right-yt {
+  flex: 0.8;
+  padding-left: 20px;
+}
+
+.buttons-yt {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.btn-yt {
+  width: 48%; /* Full width minus margin */
+  padding: 10px;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  text-align: center; 
+}
+
+.btn-yt.active {
+  color: #EB7150;
+}
+
+.btn-yt.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 100%;
+  height: 2px;
+  background-color: #EB7150;
+}
+
+.btn-yt:hover {
+  color:  #EB7150;
+}
+
+.btn-yt:hover::after {
+  width: 80px; 
+  height: 2px;
+}
+
+.info-yt .row-yt {
+  display: flex;
+  align-items: flex-start; /* Align items at the start */
+  margin-bottom: 12px;
+}
+
+.icon-yt {
+  font-size: 20px;
+  color: #24d84a; 
+  margin-right: 10px;
+  margin-top: 4px; /* Optional: Add some margin to vertically center the icon with text */
+  flex-shrink: 0;  /* Prevent the icon from shrinking */
+}
+
+.text-yt {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.5;
+  color: white;
+  word-wrap: break-word; /* Ensure long words break properly */
+}
+
+iframe {
+  width: 100%;
+  border-radius: 5px;
+  height: 45vh;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .container-yt {
+    padding: 40px 20px; /* Adjust padding */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items */
+  }
+
+  .left-yt, .right-yt {
+    padding: 0; /* Remove padding */
+    width: 100%; /* Full width for both sections */
+  }
+
+  .right-yt {
+    margin-top: 20px; /* Add some spacing between sections */
+  }
+
+  .buttons-yt {
+    flex-direction: column; /* Stack buttons vertically */
+    width: 100%; /* Full width for buttons */
+    align-items: center; /* Center buttons */
+  }
+
+  .btn-yt {
+    width: 100%; /* Full width for buttons */
+    margin-bottom: 10px; /* Space between buttons */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-yt {
+    padding: 20px; /* Further reduce padding */
+  }
+
+  .info-yt .row-yt {
+    flex-direction: column; /* Stack icons and text vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .icon-yt {
+    margin-bottom: 5px; /* Add space below icon */
+  }
+
+  .text-yt {
+    font-size: 12px; /* Smaller text for mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn-yt {
+    font-size: 16px; /* Adjust button text size for mobile */
+  }
+
+  .text-yt {
+    font-size: 12px; /* Further reduce text size for smaller screens */
+  }
+}
+
+

@@ -1,12 +1,12 @@
 import React from "react";
 import "./BuyersPost.css";
-import { RiAdminFill } from "react-icons/ri";
-import { VscOpenPreview } from "react-icons/vsc";
-import { FaAddressBook } from "react-icons/fa";
-import { HiBookOpen } from "react-icons/hi2";
-import { BsJournalBookmark } from "react-icons/bs";
-import { GiShakingHands } from "react-icons/gi";
+import group33 from "../../../assets/Group 33.png"
+import document from "../../../assets/document.png"
+import layer from "../../../assets/Layer.png"
 import Title from "./Title/Title";
+import edit from "../../../assets/edit.png"
+import group from "../../../assets/Group.png"
+import group22 from "../../../assets/Group22.png"
 function BuyersPost() {
   return (
     <>
@@ -16,30 +16,30 @@ function BuyersPost() {
       <div />
       <div className="buyers-container">
         <div className="flex-box" style={{ backgroundColor: "#E8FBFF" }}>
-          <RiAdminFill size="80px" />
+          <img src={group33} style={{height:"45px",width:"45px"}}/>
           <h1>Select Your Role and Sign Up</h1>
         </div>
         <div className="flex-box">
-          <FaAddressBook size="80px" />
+          <img src={document} style={{height:"45px",width:"45px"}}/>
           <h1>Buyers Post Your Requirements</h1>
         </div>
         <div className="flex-box" style={{ backgroundColor: "#E8FBFF" }}>
-          <VscOpenPreview size="80px" />
+          <img src={layer} style={{height:"45px",width:"45px"}}/>
           <h1> Review, Select, and Contact the Best Suppliers</h1>
         </div>
         <div className="flex-box">
-          <HiBookOpen size="80px" />
+          <img src={edit} style={{height:"45px",width:"45px"}}/>
           <h1>
             {" "}
             Suppliers Complete your profile and get notified for opportunities
           </h1>
         </div>
         <div className="flex-box" style={{ backgroundColor: "#E8FBFF" }}>
-          <BsJournalBookmark size="80px" />
+          <img src={group} style={{height:"45px",width:"45px"}}/>
           <h1>Contact to Buyers and Share your Quote for the service</h1>
         </div>
         <div className="flex-box">
-          <GiShakingHands size="80px" />
+          <img src={group22} style={{height:"45px",width:"45px"}}/>
           <h1>
             Both the Parties can Connect and Make Business Leave a Feedback
           </h1>
